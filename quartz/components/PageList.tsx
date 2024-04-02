@@ -4,6 +4,19 @@ import { Date, getDate } from "./Date"
 import { QuartzComponent, QuartzComponentProps } from "./types"
 import { GlobalConfiguration } from "../cfg"
 
+export function byAlphabetical() {
+  return (f1: QuartzPluginData, f2: QuartzPluginData) => {
+    const f1Title = f1.frontmatter?.title.toLowerCase() ?? ""
+    const f2Title = f2.frontmatter?.title.toLowerCase() ?? ""
+    if (f1Title.startsWith("folder:")) {
+      return -1;
+    } else if (f2Title.startsWith("folder:")) {
+      return 1;
+    }
+    return f1Title.localeCompare(f2Title)
+  }
+}
+
 export function byDateAndAlphabetical(
   cfg: GlobalConfiguration,
 ): (f1: QuartzPluginData, f2: QuartzPluginData) => number {
@@ -30,7 +43,7 @@ type Props = {
 } & QuartzComponentProps
 
 export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit }: Props) => {
-  let list = allFiles.sort(byDateAndAlphabetical(cfg))
+  let list = allFiles.sort(byAlphabetical())
   if (limit) {
     list = list.slice(0, limit)
   }

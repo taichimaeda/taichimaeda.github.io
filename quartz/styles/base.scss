@@ -190,7 +190,7 @@ a {
     }
   }
 
-  & .page-header {
+  & .page-header, & .page-footer {
     width: $pageWidth;
     margin: $topSpacing auto 0 auto;
     @media all and (max-width: $fullPageWidth) {

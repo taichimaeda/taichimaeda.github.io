@@ -16,10 +16,10 @@ import {
   simplifySlug,
 } from "../../util/path"
 import { defaultListPageLayout, sharedPageComponents } from "../../../quartz.layout"
-import { FolderContent } from "../../components"
 import { write } from "./helpers"
 import { i18n } from "../../i18n"
 import DepGraph from "../../depgraph"
+import { FolderContent } from "../../components"
 
 export const FolderPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpts) => {
   const opts: FullPageLayout = {
@@ -62,11 +62,23 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpt
       const folders: Set<SimpleSlug> = new Set(
         allFiles.flatMap((data) => {
           const slug = data.slug
-          const folderName = path.dirname(slug ?? "") as SimpleSlug
-          if (slug && folderName !== "." && folderName !== "tags") {
-            return [folderName]
+          if (!slug) {
+            return []
           }
-          return []
+
+          // Emit all folders in the path.
+          let folderName = slug as any;
+          const folderNames = []
+          while (true) {
+            folderName = path.dirname(folderName ?? "") as SimpleSlug
+            if (folderName === ".") {
+              break;
+            }
+            if (folderName !== "tags") {
+              folderNames.push(folderName);
+            }
+          }
+          return folderNames;
         }),
       )
 
@@ -76,7 +88,7 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpt
           defaultProcessedContent({
             slug: joinSegments(folder, "index") as FullSlug,
             frontmatter: {
-              title: `${i18n(cfg.locale).pages.folderContent.folder}: ${folder}`,
+              title: `${i18n(cfg.locale).pages.folderContent.folder}: ${folder.split(path.posix.sep).pop()}`,
               tags: [],
             },
           }),
