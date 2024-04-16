@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Data Link Layer</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM Plex Mono&amp;family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="Data Link Layer"/><meta property="og:description" content="Data Link Layer WiFi Also known as IEEE 802.11. Wireless access point uses 2.4GHz or 5GHz of the radio spectrum, which are open for unlicensed use. It merely work as a wireless repeater."/><meta property="og:image" content="https://taichimaeda.github.io/static/og-image.png"/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="Data Link Layer WiFi Also known as IEEE 802.11. Wireless access point uses 2.4GHz or 5GHz of the radio spectrum, which are open for unlicensed use. It merely work as a wireless repeater."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="Computer-Science/Networks/Data-Link-Layer"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h1 class="page-title"><a href="../..">🥝 Taichi's Obsidian</a></h1><div class="spacer mobile-only"></div><div class="search"><div id="search-icon"><p>Search</p><div></div><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search</title><desc id="desc">Search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></div><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="search-layout" data-preview="true"></div></div></div></div><div class="darkmode"><input class="toggle" id="darkmode-toggle" type="checkbox" tabindex="-1"/><label id="toggle-label-light" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg></label><label id="toggle-label-dark" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></label></div><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[{&quot;path&quot;:&quot;Computer-Science&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Computer-Science/Algorithms&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Computer-Science/Algorithms/String-Algorithms&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Computer-Science/Networks&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Computer-Science/Operating-Systems&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Computer-Science/Theory-of-Computation&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Computer-Science/Theory-of-Computation/Introduction-to-the-Theory-of-Computation&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Engineering&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Engineering/Project-Management&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Engineering/Project-Management/Git-and-GitHub&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Projects&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Projects/Over-the-Wire&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Projects/Rustonomicon&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Projects/Type-Challenges&quot;,&quot;collapsed&quot;:true}]"><h1>Explorer</h1><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Computer-Science"><button class="folder-button"><span class="folder-title">Computer Science</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Computer-Science"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Computer-Science/Algorithms"><button class="folder-button"><span class="folder-title">Algorithms</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Computer-Science/Algorithms"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Computer-Science/Algorithms/String-Algorithms"><button class="folder-button"><span class="folder-title">String Algorithms</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Computer-Science/Algorithms/String-Algorithms"><li><a href="../../Computer-Science/Algorithms/String-Algorithms/KMP-Algorithm" data-for="Computer-Science/Algorithms/String-Algorithms/KMP-Algorithm">KMP Algorithm</a></li><li><a href="../../Computer-Science/Algorithms/String-Algorithms/Z-Algorithm" data-for="Computer-Science/Algorithms/String-Algorithms/Z-Algorithm">Z Algorithm</a></li></ul></div></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Computer-Science/Networks"><button class="folder-button"><span class="folder-title">Networks</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Computer-Science/Networks"><li><a href="../../Computer-Science/Networks/Application-Layer" data-for="Computer-Science/Networks/Application-Layer">Application Layer</a></li><li><a href="../../Computer-Science/Networks/Data-Link-Layer" data-for="Computer-Science/Networks/Data-Link-Layer">Data Link Layer</a></li><li><a href="../../Computer-Science/Networks/Network-Layer" data-for="Computer-Science/Networks/Network-Layer">Network Layer</a></li><li><a href="../../Computer-Science/Networks/Network-Security" data-for="Computer-Science/Networks/Network-Security">Network Security</a></li><li><a href="../../Computer-Science/Networks/OSI-Model" data-for="Computer-Science/Networks/OSI-Model">OSI Model</a></li><li><a href="../../Computer-Science/Networks/Physical-Layer" data-for="Computer-Science/Networks/Physical-Layer">Physical Layer</a></li><li><a href="../../Computer-Science/Networks/Transport-Layer" data-for="Computer-Science/Networks/Transport-Layer">Transport Layer</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Computer-Science/Operating-Systems"><button class="folder-button"><span class="folder-title">Operating Systems</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Computer-Science/Operating-Systems"><li><a href="../../Computer-Science/Operating-Systems/Device-Management" data-for="Computer-Science/Operating-Systems/Device-Management">Device Management</a></li><li><a href="../../Computer-Science/Operating-Systems/Disk-Management" data-for="Computer-Science/Operating-Systems/Disk-Management">Disk Management</a></li><li><a href="../../Computer-Science/Operating-Systems/File-Systems" data-for="Computer-Science/Operating-Systems/File-Systems">File Systems</a></li><li><a href="../../Computer-Science/Operating-Systems/Memory-Management" data-for="Computer-Science/Operating-Systems/Memory-Management">Memory Management</a></li><li><a href="../../Computer-Science/Operating-Systems/Processes" data-for="Computer-Science/Operating-Systems/Processes">Processes</a></li><li><a href="../../Computer-Science/Operating-Systems/Synchronisation" data-for="Computer-Science/Operating-Systems/Synchronisation">Synchronisation</a></li><li><a href="../../Computer-Science/Operating-Systems/Threads" data-for="Computer-Science/Operating-Systems/Threads">Threads</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Computer-Science/Theory-of-Computation"><button class="folder-button"><span class="folder-title">Theory of Computation</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Computer-Science/Theory-of-Computation"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Computer-Science/Theory-of-Computation/Introduction-to-the-Theory-of-Computation"><button class="folder-button"><span class="folder-title">Introduction to the Theory of Computation</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Computer-Science/Theory-of-Computation/Introduction-to-the-Theory-of-Computation"><li><a href="../../Computer-Science/Theory-of-Computation/Introduction-to-the-Theory-of-Computation/Introduction-to-the-Theory-of-Computation---Chapter-1" data-for="Computer-Science/Theory-of-Computation/Introduction-to-the-Theory-of-Computation/Introduction-to-the-Theory-of-Computation---Chapter-1">Introduction to the Theory of Computation - Chapter 1</a></li></ul></div></li></ul></div></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Engineering"><button class="folder-button"><span class="folder-title">Engineering</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Engineering"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Engineering/Project-Management"><button class="folder-button"><span class="folder-title">Project Management</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Engineering/Project-Management"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Engineering/Project-Management/Git-and-GitHub"><button class="folder-button"><span class="folder-title">Git and GitHub</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Engineering/Project-Management/Git-and-GitHub"><li><a href="../../Engineering/Project-Management/Git-and-GitHub/Editing-Past-Commits" data-for="Engineering/Project-Management/Git-and-GitHub/Editing-Past-Commits">Editing Past Commits</a></li><li><a href="../../Engineering/Project-Management/Git-and-GitHub/Git-Hooks" data-for="Engineering/Project-Management/Git-and-GitHub/Git-Hooks">Git Hooks</a></li><li><a href="../../Engineering/Project-Management/Git-and-GitHub/Git-Internals" data-for="Engineering/Project-Management/Git-and-GitHub/Git-Internals">Git Internals</a></li><li><a href="../../Engineering/Project-Management/Git-and-GitHub/Git-Maintainance" data-for="Engineering/Project-Management/Git-and-GitHub/Git-Maintainance">Git Maintainance</a></li><li><a href="../../Engineering/Project-Management/Git-and-GitHub/Golden-Rule-of-Rebasing" data-for="Engineering/Project-Management/Git-and-GitHub/Golden-Rule-of-Rebasing">Golden Rule of Rebasing</a></li><li><a href="../../Engineering/Project-Management/Git-and-GitHub/Ours-and-Theirs" data-for="Engineering/Project-Management/Git-and-GitHub/Ours-and-Theirs">Ours and Theirs</a></li><li><a href="../../Engineering/Project-Management/Git-and-GitHub/Rebasing-Pushed-Branches" data-for="Engineering/Project-Management/Git-and-GitHub/Rebasing-Pushed-Branches">Rebasing Pushed Branches</a></li><li><a href="../../Engineering/Project-Management/Git-and-GitHub/Traversing-Parent-Commits" data-for="Engineering/Project-Management/Git-and-GitHub/Traversing-Parent-Commits">Traversing Parent Commits</a></li><li><a href="../../Engineering/Project-Management/Git-and-GitHub/Upstream-and-Remote-Tracking-Branches" data-for="Engineering/Project-Management/Git-and-GitHub/Upstream-and-Remote-Tracking-Branches">Upstream and Remote-Tracking Branches</a></li></ul></div></li></ul></div></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Projects"><button class="folder-button"><span class="folder-title">Projects</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Projects"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Projects/Over-the-Wire"><button class="folder-button"><span class="folder-title">Over the Wire</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Projects/Over-the-Wire"><li><a href="../../Projects/Over-the-Wire/Over-the-Wire---Bandit" data-for="Projects/Over-the-Wire/Over-the-Wire---Bandit">Over the Wire - Bandit</a></li><li><a href="../../Projects/Over-the-Wire/Over-the-Wire---Natas" data-for="Projects/Over-the-Wire/Over-the-Wire---Natas">Over the Wire - Natas</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Projects/Rustonomicon"><button class="folder-button"><span class="folder-title">Rustonomicon</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Projects/Rustonomicon"><li><a href="../../Projects/Rustonomicon/Data-Layout" data-for="Projects/Rustonomicon/Data-Layout">Data Layout</a></li><li><a href="../../Projects/Rustonomicon/Ownership-and-Lifetimes" data-for="Projects/Rustonomicon/Ownership-and-Lifetimes">Ownership and Lifetimes</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Projects/Type-Challenges"><button class="folder-button"><span class="folder-title">Type Challenges</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Projects/Type-Challenges"><li><a href="../../Projects/Type-Challenges/Any-Type" data-for="Projects/Type-Challenges/Any-Type">Any Type</a></li><li><a href="../../Projects/Type-Challenges/Compute" data-for="Projects/Type-Challenges/Compute">Compute</a></li><li><a href="../../Projects/Type-Challenges/Conditional-Types" data-for="Projects/Type-Challenges/Conditional-Types">Conditional Types</a></li><li><a href="../../Projects/Type-Challenges/Empty-Objects" data-for="Projects/Type-Challenges/Empty-Objects">Empty Objects</a></li><li><a href="../../Projects/Type-Challenges/Index-Signatures" data-for="Projects/Type-Challenges/Index-Signatures">Index Signatures</a></li><li><a href="../../Projects/Type-Challenges/Indexing" data-for="Projects/Type-Challenges/Indexing">Indexing</a></li><li><a href="../../Projects/Type-Challenges/Inference" data-for="Projects/Type-Challenges/Inference">Inference</a></li><li><a href="../../Projects/Type-Challenges/Intersection-and-Union" data-for="Projects/Type-Challenges/Intersection-and-Union">Intersection and Union</a></li><li><a href="../../Projects/Type-Challenges/Keyof" data-for="Projects/Type-Challenges/Keyof">Keyof</a></li><li><a href="../../Projects/Type-Challenges/Literal-Types" data-for="Projects/Type-Challenges/Literal-Types">Literal Types</a></li><li><a href="../../Projects/Type-Challenges/Local-Variables" data-for="Projects/Type-Challenges/Local-Variables">Local Variables</a></li><li><a href="../../Projects/Type-Challenges/Mapped-Types" data-for="Projects/Type-Challenges/Mapped-Types">Mapped Types</a></li><li><a href="../../Projects/Type-Challenges/Tail-Recursion" data-for="Projects/Type-Challenges/Tail-Recursion">Tail Recursion</a></li><li><a href="../../Projects/Type-Challenges/Type-Equality" data-for="Projects/Type-Challenges/Type-Equality">Type Equality</a></li><li><a href="../../Projects/Type-Challenges/Type-Hierarchy" data-for="Projects/Type-Challenges/Type-Hierarchy">Type Hierarchy</a></li><li><a href="../../Projects/Type-Challenges/Union-to-Tuples" data-for="Projects/Type-Challenges/Union-to-Tuples">Union to Tuples</a></li><li><a href="../../Projects/Type-Challenges/Void-Type" data-for="Projects/Type-Challenges/Void-Type">Void Type</a></li></ul></div></li></ul></div></li><li><a href="../../Home" data-for="Home">Home</a></li></ul></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">/</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../Computer-Science/">Computer Science</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../Computer-Science/Networks/">Networks</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Data Link Layer</a></div></nav><h1 class="article-title">Data Link Layer</h1><p show-comma="true" class="content-meta"><span>Mar 17, 2023</span><span>12 min read</span></p></div></div><article class="popover-hint"><h1 id="data-link-layer">Data Link Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#data-link-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="wifi">WiFi<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#wifi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Also known as IEEE 802.11.</p>
+<p>Wireless access point uses 2.4GHz or 5GHz of the radio spectrum, which are open for unlicensed use. It merely work as a wireless repeater.</p>
+<h3 id="bands">Bands<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bands" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>ISM band
+<ul>
+<li>Reserved for industrial, scientific and medical purposes.</li>
+</ul>
+</li>
+<li>U-NII band
+<ul>
+<li>Known as unlicensed national information infrastructure.</li>
+</ul>
+</li>
+</ul>
+<p>These bands can be used by unlicensed purposes and can be prone to interference by:</p>
+<ul>
+<li>Cordless phones</li>
+<li>Baby monitors</li>
+<li>Bluetooth</li>
+<li>NFC</li>
+<li>Microwave ovens</li>
+<li>Amateur radio, etc.</li>
+</ul>
+<h2 id="ethernet">Ethernet<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ethernet" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Also known as IEEE 802.3.</p>
+<h3 id="cable-types">Cable Types<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cable-types" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>UTP (unshielded twisted pair)</li>
+<li>STP (shielded twisted pair; braid screen around cables)</li>
+<li>FTP (foil twisted pair; foil shield around cables)</li>
+<li>SFTP (shielded and foil twisted pair)</li>
+</ul>
+<p>Twisting reduces the strength of noise signals, and shielding ethernet cables prevents eavesdropping through EMI.</p>
+<p>UTP cables were cheap because they were used in telephone systems with mass production.</p>
+<h3 id="cable-pinouts">Cable Pinouts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cable-pinouts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="https://en.wikipedia.org/wiki/Differential_signalling" class="external">https://en.wikipedia.org/wiki/Differential_signalling<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<p>In Ethernet, there are two pairs of wires used for differential signalling, which means that the data signal is transmitted as a pair of electrical signals with opposite polarities:</p>
+<ul>
+<li>TX+ and TX-: used for transmitting data</li>
+<li>RX+ and RX-: used for receiving data</li>
+</ul>
+<p>The receiver then looks at the difference between the two signals to interpret the data. Some benefits of differential signalling include double signalling voltage, reduced noise and low power consumption.</p>
+<h3 id="cable-flavours">Cable Flavours<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cable-flavours" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="https://www.computercablestore.com/straight-through-crossover-and-rollover-wiring" class="external">https://www.computercablestore.com/straight-through-crossover-and-rollover-wiring<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><br/>
+<a href="https://en.wikipedia.org/wiki/Rollover_cable" class="external">https://en.wikipedia.org/wiki/Rollover_cable<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<ul>
+<li>Straight-through: for communication between different layers (e.g. switch to router)</li>
+<li>Crossover: for communication between the same layer (e.g. switch to switch)</li>
+<li>Rollover: for directly tapping into a networking device (e.g. troubleshoot a router from the console port)</li>
+</ul>
+<p>A straight-through cable connects TX+/- to TX+/- and RX+/- to RX+/-. A crossover cable connects TX+ to RX+, TX- to RX- and vice versa. A rollover cable has reversed wiring which connects a pc to a router’s serial communication port (using a different standard).</p>
+<p>A PC or router uses the MDI specification, while a switch uses MDI-X specification, which comes with a crossover inside it. This is why we need to use a straight-through for connecting switch to pc, and a crossover cable for switch to switch/pc to pc. Check <a href="https://www.practicalnetworking.net/stand-alone/ethernet-wiring/#why_crossover" class="external">this link<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> for the motivation behind the crossover.</p>
+<p>Some modern devices know how to fake-swap between a straight and a crossover using software based approach (Auto-MDI/MDIX).</p>
+<h3 id="frames">Frames<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#frames" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>An Ethernet frame:</p>
+<ul>
+<li>Provides well-defined interface to Network Layer for sending/receiving packets.</li>
+<li>Identifies transmission errors using a Cyclic Redundancy Check (CRC) checksum.</li>
+</ul>
+<p>The CRC checksum is stored in the footer.</p>
+<h3 id="mac-address">Mac Address<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mac-address" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Every NIC conforming to IEEE 802 has a MAC address:</p>
+<ul>
+<li>48 bits written as 6 colon-separated octets in hexadecimal.</li>
+<li>OUID (first 3 octets) is manufacturer specific
+<ul>
+<li>Guarantees uniqueness (c.f. ICANN and ISP for IP addresses).</li>
+</ul>
+</li>
+<li>I/G bit (last bit in first octet) decides if unicast or multicast address.
+<ul>
+<li>Unicast means the address is individual</li>
+<li>Multicast means it is a group address.</li>
+</ul>
+</li>
+<li>U/L bit (second last bit in first octet) decides if globally or locally administered.</li>
+</ul>
+<p>MAC address can be assigned to a PC, router or switch.</p>
+<p>A host MAC address is a unicast and globally administered address, while a broadcast address (FF:FF:FF:FF:FF:FF) is a multicast and local administered address.</p>
+<h3 id="repeater-hub-switch-and-router">Repeater, Hub, Switch and Router<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#repeater-hub-switch-and-router" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Repeaters, hubs, switches and routers have different purposes and operate in different OSI layers:</p>
+<ul>
+<li>Repeater
+<ul>
+<li>Repeats data in LAN.</li>
+<li>Boosts the signal and extends the range of network.</li>
+<li>Receives and forwards data from all ports.</li>
+<li>Wireless version is known as wireless access point (WAP).</li>
+<li>Physical layer because it only handles signalling.</li>
+</ul>
+</li>
+<li>Hub
+<ul>
+<li>Connects devices in LAN.</li>
+<li>Broadcasts data to all connected devices.</li>
+<li>Physical layer because it only handles signalling.</li>
+</ul>
+</li>
+<li>Switch
+<ul>
+<li>Connects devices in LAN.</li>
+<li>Sends data to the destination device only.</li>
+<li>Reduces the network congestion.</li>
+<li>Data-link layer because it needs to read the MAC address in a frame.</li>
+</ul>
+</li>
+<li>Bridge
+<ul>
+<li>Switch with only two ports.</li>
+<li>Only sends frames connection if the MAC address of the destination matches.</li>
+</ul>
+</li>
+<li>Router
+<ul>
+<li>Connects multiple LANs.</li>
+<li>Sends data to the destination network.</li>
+<li>Network layer because it needs to read the IP address in a packet.</li>
+</ul>
+</li>
+</ul>
+<p>A switch uses the FIB MAC table to remember which port is connected to which device by its MAC address.</p>
+<p>A router comes with many other features, such as firewalls, NAT and DHCP server.</p>
+<h3 id="switching-methods">Switching Methods<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#switching-methods" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Store-and-forward
+<ul>
+<li>Receives the whole frame and forwards it.</li>
+<li>Slow for large frames.</li>
+<li>Switch can check the checksum on behalf.</li>
+</ul>
+</li>
+<li>Cut-through
+<ul>
+<li>Start forwarding when you know the header.</li>
+<li>Fast even for large frames.</li>
+<li>Recipient must check the checksum.</li>
+</ul>
+</li>
+</ul>
+<h3 id="switching-loops">Switching Loops<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#switching-loops" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A switching loop occurs when there is more than one layer 2 paths between two endpoints (e.g. multiple connections between two switches or two ports on the same switch connected to each other).</p>
+<p>Use the following protocols to ensure there are no loops:</p>
+<ul>
+<li>Spanning Tree Protocol</li>
+<li>Rapid Spanning Tree Protocol</li>
+</ul>
+<h3 id="network-topology">Network Topology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#network-topology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Switched Ethernet Topology
+<ul>
+<li>Also known as star topology.</li>
+<li>Single machine connected to each switch port.</li>
+<li>Sniffing is usually impossible.</li>
+</ul>
+</li>
+<li>Inter-networking Ethernet Topology
+<ul>
+<li>Repeater and switches.</li>
+<li>Some machines are directly connected to each other via cables.</li>
+</ul>
+</li>
+<li>Wireless Network Topology
+<ul>
+<li>Wireless access points.</li>
+<li>Sniffing is easy.</li>
+</ul>
+</li>
+</ul>
+<h3 id="inter-networking-ethernet-topology">Inter-networking Ethernet Topology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#inter-networking-ethernet-topology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Inter-networking Ethernet Topology can be further categorised:</p>
+<ul>
+<li>Bus Topology
+<ul>
+<li>BNC T connector to add a new host.</li>
+<li>BNC terminator to mark the end of network.</li>
+</ul>
+</li>
+<li>Ring Topology
+<ul>
+<li>Two NICs required per host (expensive).</li>
+<li>Data flow around the ring.</li>
+<li>A cut in link kills the entire network.</li>
+</ul>
+</li>
+<li>Dual Ring Topology
+<ul>
+<li>Four NICs required per host (more expensive).</li>
+<li>Faster data flow with backup link.</li>
+</ul>
+</li>
+<li>Token Ring Topology
+<ul>
+<li>Connects all hosts in a logical ring (not necessarily physical).</li>
+<li>MSAU controlled the mapping from the logical ring to physical network.</li>
+<li>Frames are passed around the logical ring.</li>
+<li>Frame are removed from network when reaching the sender.</li>
+</ul>
+</li>
+</ul>
+<h3 id="token-ring-topology">Token Ring Topology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#token-ring-topology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Token Ring Topology has listen mode and transmit mode:</p>
+<ul>
+<li>Listen mode
+<ul>
+<li>Copies frame into buffer.</li>
+<li>Re-transmits frame to next host.</li>
+<li>Host can read the buffer at any time.</li>
+</ul>
+</li>
+<li>Transmit mode
+<ul>
+<li>Transmits frames from memory.</li>
+<li>Drains frames arriving back.</li>
+<li>Only one host can be in transmit mode.
+<ul>
+<li>To reduce frame collisions.</li>
+</ul>
+</li>
+<li>May release the token before draining all frames (early release).</li>
+</ul>
+</li>
+</ul>
+<p>When there is no data to send, a special frame, called a token, is passed around the circle indefinitely.</p>
+<p>A token consists of (pre-defined) start/end delimiter and access control flags. A frame additionally contains the data to be sent, frame control, source/destination MAC address and frame status.</p>
+<h4 id="schemes-of-token-ring-topology">Schemes of Token Ring Topology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#schemes-of-token-ring-topology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Priority scheme
+<ul>
+<li>Host can claim the token if the priority of host is as high as the priority of data.</li>
+</ul>
+</li>
+<li>Reservation scheme
+<ul>
+<li>Host can reserve the right to transmit high-priority data.</li>
+<li>Host wanting to transmit data can set reservation priority in the current frame (not token).</li>
+<li>Host transmitting frames sees the frame with reservation priority.
+<ul>
+<li>When transmission is complete, sends a token with this priority so that other hosts cannot claim the token unless they have higher-priority data.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Acknowledgement scheme
+<ul>
+<li>Frame status A: destination is currently busy.</li>
+<li>Frame status C: destination correctly read the frame.</li>
+</ul>
+</li>
+</ul>
+<h4 id="complexities-of-token-ring-topology">Complexities of Token Ring Topology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#complexities-of-token-ring-topology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Assumes no one abuses the priority/reservation scheme.</li>
+<li>Active monitor station is required to:
+<ul>
+<li>Re-generate lost token.</li>
+<li>Drain orphan frames.</li>
+</ul>
+</li>
+<li>Any host can become active monitor station.
+<ul>
+<li>Elect new monitor using contention protocol in case of failure.</li>
+</ul>
+</li>
+<li>Ring may have a single point of failure depending on the physical topology.
+<ul>
+<li>Use wiring concentrators to switch out faulty hosts.</li>
+</ul>
+</li>
+</ul>
+<h3 id="fibre-distributed-data-interface">Fibre-Distributed Data Interface<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fibre-distributed-data-interface" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>FDDI uses optical fibre cabling, which supports data transmission rates over long distances (about 100km).</p>
+<ul>
+<li>Class A: attached both rings.
+<ul>
+<li>Any faulty class A will not affect the remaining class As.</li>
+</ul>
+</li>
+<li>Class B: attached to only one ring.
+<ul>
+<li>Any faulty class B affects one ring at maximum.</li>
+</ul>
+</li>
+</ul>
+<h3 id="medium-access-control">Medium Access Control<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#medium-access-control" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>MAC is necessary to resolve frame collisions in broadcast channels, which comes with higher chance of frame collision.</p>
+<ul>
+<li>In a wired network, frame collision result in both frames needing to be re-transmitted because the voltage is almost the same within a LAN.</li>
+<li>In a wireless network, one signal may be stronger/weaker and a frame may be received even with collision.</li>
+</ul>
+<p>Collisions are usually detected if broadcasting host does not receive an acknowledgement (ACK) for the frame after a certain amount of time.</p>
+<p>Collisions are inevitable as there is no central authority controlling transmission. It is a best-effort service, in the worst case a frame may be indefinitely delayed.</p>
+<ul>
+<li>Suitable for most LANs</li>
+<li>Unacceptable for real-time systems.</li>
+</ul>
+<h4 id="strategies-for-medium-access-control">Strategies for Medium Access Control<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#strategies-for-medium-access-control" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>No control
+<ul>
+<li>Very inefficient.</li>
+<li>Good if channel utilisation is low.</li>
+</ul>
+</li>
+<li>Round-robin
+<ul>
+<li>Stations take turns using the channel.</li>
+<li>Used in token-based MAC systems</li>
+</ul>
+</li>
+<li>Reservations
+<ul>
+<li>Stations need to obtain channel reservation before transmitting.</li>
+<li>Used in slotted MAC systems.</li>
+</ul>
+</li>
+<li>Token-passing
+<ul>
+<li>Token transferred from one station to another.</li>
+<li>If a station has the token but no frame to send, pass token on immediately.</li>
+<li>If a station has the token and a frame to send, it sets a timer and transmits until the timer expires or there is no more data to send.</li>
+</ul>
+</li>
+<li>Using switches
+<ul>
+<li>Each Ethernet cable acts as a channel, which has at most two stations (host and switch).</li>
+<li>Switch ensures that collisions never occur by buffering frames and re-transmitting when the channel is available.</li>
+<li>Switches act as repeaters, refreshing the signal to pass it further.</li>
+</ul>
+</li>
+<li>Static channel allocation
+<ul>
+<li>Time Division Multiplexing (TDM)</li>
+<li>Frequency Division Multiplexing (FDM)
+<ul>
+<li>Not ideal if many stations exist.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Dynamic channel allocation
+<ul>
+<li>ALOHA protocol
+<ul>
+<li>Stations may transmit at any time.</li>
+<li>When collision occurs, wait for a random time interval before retransmitting.</li>
+<li>Fair channel access.</li>
+<li>Low channel efficiency.</li>
+<li>Large vulnerable period (i.e. new frames can easily destroy old frames).</li>
+</ul>
+</li>
+<li>Slotted ALOHA protocol
+<ul>
+<li>Stations may transmit only at the start of a specific time slot.</li>
+<li>Small vulnerable period (i.e. collision only happens with exact overlap, assuming the time slot is long enough).</li>
+<li>100% load gives 36% efficiency.</li>
+</ul>
+</li>
+<li>Carrier sensing
+<ul>
+<li>Stations may transmit only when channel is idle.</li>
+<li>Collisions can still occur due to transmission delay.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="collision-detection-for-medium-access-control">Collision Detection for Medium Access Control<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#collision-detection-for-medium-access-control" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>In collision detection, host listens to channel during transmission to check for collisions.</p>
+<ul>
+<li>Transmission stops when collision detected, then sends a jamming signal to notify other stations of collisions.</li>
+<li>Stations must transmit long enough to check if the frame collided.
+<ul>
+<li>Minimum frame length is <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align:-0.489ex;" xmlns="http://www.w3.org/2000/svg" width="2.256ex" height="1.995ex" role="img" focusable="false" viewBox="0 -666 997 882" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-1-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-1-TEX-I-1D702" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q156 442 175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336V326Q503 302 439 53Q381 -182 377 -189Q364 -216 332 -216Q319 -216 310 -208T299 -186Q299 -177 358 57L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-1-TEX-N-32"></use></g><g data-mml-node="mi" transform="translate(500,0)"><use data-c="1D702" xlink:href="#MJX-1-TEX-I-1D702"></use></g></g></g></svg></mjx-container> where <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align:-0.489ex;" xmlns="http://www.w3.org/2000/svg" width="1.124ex" height="1.489ex" role="img" focusable="false" viewBox="0 -442 497 658" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-2-TEX-I-1D702" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q156 442 175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336V326Q503 302 439 53Q381 -182 377 -189Q364 -216 332 -216Q319 -216 310 -208T299 -186Q299 -177 358 57L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D702" xlink:href="#MJX-2-TEX-I-1D702"></use></g></g></g></svg></mjx-container> is a end-to-end transmission delay.</li>
+</ul>
+</li>
+</ul>
+<p>The minimum frame length for Ethernet is 512 bits. There a few ways to work around this limitation for small frames:</p>
+<ul>
+<li>Career extension
+<ul>
+<li>Any frame less than 512 bits is extended by the host.</li>
+</ul>
+</li>
+<li>Frame bursting
+<ul>
+<li>Several short frames can be used to make one long frame.</li>
+</ul>
+</li>
+</ul>
+<h4 id="channel-back-off-for-medium-access-control">Channel Back-off for Medium Access Control<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#channel-back-off-for-medium-access-control" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>1-persistent CSMA
+<ul>
+<li>Station keeps checking if the channel is free and then transmits immediately.</li>
+</ul>
+</li>
+<li><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align:-0.439ex;" xmlns="http://www.w3.org/2000/svg" width="1.138ex" height="1.439ex" role="img" focusable="false" viewBox="0 -442 503 636" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-3-TEX-I-1D45D" d="M23 287Q24 290 25 295T30 317T40 348T55 381T75 411T101 433T134 442Q209 442 230 378L240 387Q302 442 358 442Q423 442 460 395T497 281Q497 173 421 82T249 -10Q227 -10 210 -4Q199 1 187 11T168 28L161 36Q160 35 139 -51T118 -138Q118 -144 126 -145T163 -148H188Q194 -155 194 -157T191 -175Q188 -187 185 -190T172 -194Q170 -194 161 -194T127 -193T65 -192Q-5 -192 -24 -194H-32Q-39 -187 -39 -183Q-37 -156 -26 -148H-6Q28 -147 33 -136Q36 -130 94 103T155 350Q156 355 156 364Q156 405 131 405Q109 405 94 377T71 316T59 280Q57 278 43 278H29Q23 284 23 287ZM178 102Q200 26 252 26Q282 26 310 49T356 107Q374 141 392 215T411 325V331Q411 405 350 405Q339 405 328 402T306 393T286 380T269 365T254 350T243 336T235 326L232 322Q232 321 229 308T218 264T204 212Q178 106 178 102Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45D" xlink:href="#MJX-3-TEX-I-1D45D"></use></g></g></g></svg></mjx-container>-persistent CSMA
+<ul>
+<li>Station keeps checking if the channel is free and then transmits at probability <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align:-0.439ex;" xmlns="http://www.w3.org/2000/svg" width="1.138ex" height="1.439ex" role="img" focusable="false" viewBox="0 -442 503 636" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-4-TEX-I-1D45D" d="M23 287Q24 290 25 295T30 317T40 348T55 381T75 411T101 433T134 442Q209 442 230 378L240 387Q302 442 358 442Q423 442 460 395T497 281Q497 173 421 82T249 -10Q227 -10 210 -4Q199 1 187 11T168 28L161 36Q160 35 139 -51T118 -138Q118 -144 126 -145T163 -148H188Q194 -155 194 -157T191 -175Q188 -187 185 -190T172 -194Q170 -194 161 -194T127 -193T65 -192Q-5 -192 -24 -194H-32Q-39 -187 -39 -183Q-37 -156 -26 -148H-6Q28 -147 33 -136Q36 -130 94 103T155 350Q156 355 156 364Q156 405 131 405Q109 405 94 377T71 316T59 280Q57 278 43 278H29Q23 284 23 287ZM178 102Q200 26 252 26Q282 26 310 49T356 107Q374 141 392 215T411 325V331Q411 405 350 405Q339 405 328 402T306 393T286 380T269 365T254 350T243 336T235 326L232 322Q232 321 229 308T218 264T204 212Q178 106 178 102Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D45D" xlink:href="#MJX-4-TEX-I-1D45D"></use></g></g></g></svg></mjx-container>.</li>
+</ul>
+</li>
+<li>Non-persistent CSMA
+<ul>
+<li>If the channel is busy, wait for a random amount of time before checking again.</li>
+</ul>
+</li>
+<li>Binary exponential back-off
+<ul>
+<li>Minimum frame length is called a slot.</li>
+<li>If a collision occurs in transmission, wait 0 or 1 slots before attempting again.</li>
+<li>After <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align:-0.025ex;" xmlns="http://www.w3.org/2000/svg" width="0.98ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 433 453" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-5-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D450" xlink:href="#MJX-5-TEX-I-1D450"></use></g></g></g></svg></mjx-container> collisions, wait <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align:-0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 500 688" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-6-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><use data-c="30" xlink:href="#MJX-6-TEX-N-30"></use></g></g></g></svg></mjx-container> to <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align:-0.186ex;" xmlns="http://www.w3.org/2000/svg" width="5.909ex" height="1.714ex" role="img" focusable="false" viewBox="0 -675.5 2611.6 757.5" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-7-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-7-TEX-I-1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path><path id="MJX-7-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-7-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-7-TEX-N-32"></use></g><g data-mml-node="mi" transform="translate(533,363) scale(0.707)"><use data-c="1D450" xlink:href="#MJX-7-TEX-I-1D450"></use></g></g><g data-mml-node="mo" transform="translate(1111.4,0)"><use data-c="2212" xlink:href="#MJX-7-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(2111.6,0)"><use data-c="31" xlink:href="#MJX-7-TEX-N-31"></use></g></g></g></svg></mjx-container> slots, up to the limit of 1023 slots / 10 collisions.</li>
+</ul>
+</li>
+</ul>
+<p>Ethernet uses 1-persistent CSMA when network load is low, and binary exponential back-off when network load is high.</p>
+<h3 id="address-resolution-protocol">Address Resolution Protocol<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#address-resolution-protocol" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A MAC address is enough for communication within a LAN, but an IP Address is required to communicate outside of the LAN.</p>
+<ul>
+<li>IP addresses specify addresses of hosts involved in end-to-end communication</li>
+<li>MAC addresses specify addresses of hosts involved in end-to-end communication within the same network.</li>
+</ul>
+<p>Switches are in the data-link layer and cannot read the destination’s IP addresses in network layer, so they send an ARP request to routers to find out the MAC address.</p>
+<p>IP Address can be set statically (fixed IP, set manually) or dynamically (assigned to your NIC, e.g by DHCP service).<br/>
+IP Addresses specify hosts on the internet, it does not have to be translated when passing through a router (but can, e.g NAT).<br/>
+MAC Addresses specify hosts communicating on the same network/subnetwork. Typically do not change when passing through routers (as packets).</p><style>
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] > g > svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+</style></article><div class="page-footer"><hr/><script src="https://utteranc.es/client.js" repo="taichimaeda/taichimaeda.github.io" issue-term="pathname" theme="github-dark" crossorigin="anonymous" async></script></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" id="toc" class><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="toc-content"><ul class="overflow"><li class="depth-0"><a href="#data-link-layer" data-for="data-link-layer">Data Link Layer</a></li><li class="depth-1"><a href="#wifi" data-for="wifi">WiFi</a></li><li class="depth-2"><a href="#bands" data-for="bands">Bands</a></li><li class="depth-1"><a href="#ethernet" data-for="ethernet">Ethernet</a></li><li class="depth-2"><a href="#cable-types" data-for="cable-types">Cable Types</a></li><li class="depth-2"><a href="#cable-pinouts" data-for="cable-pinouts">Cable Pinouts</a></li><li class="depth-2"><a href="#cable-flavours" data-for="cable-flavours">Cable Flavours</a></li><li class="depth-2"><a href="#frames" data-for="frames">Frames</a></li><li class="depth-2"><a href="#mac-address" data-for="mac-address">Mac Address</a></li><li class="depth-2"><a href="#repeater-hub-switch-and-router" data-for="repeater-hub-switch-and-router">Repeater, Hub, Switch and Router</a></li><li class="depth-2"><a href="#switching-methods" data-for="switching-methods">Switching Methods</a></li><li class="depth-2"><a href="#switching-loops" data-for="switching-loops">Switching Loops</a></li><li class="depth-2"><a href="#network-topology" data-for="network-topology">Network Topology</a></li><li class="depth-2"><a href="#inter-networking-ethernet-topology" data-for="inter-networking-ethernet-topology">Inter-networking Ethernet Topology</a></li><li class="depth-2"><a href="#token-ring-topology" data-for="token-ring-topology">Token Ring Topology</a></li><li class="depth-2"><a href="#fibre-distributed-data-interface" data-for="fibre-distributed-data-interface">Fibre-Distributed Data Interface</a></li><li class="depth-2"><a href="#medium-access-control" data-for="medium-access-control">Medium Access Control</a></li><li class="depth-2"><a href="#address-resolution-protocol" data-for="address-resolution-protocol">Address Resolution Protocol</a></li></ul></div></div></div></div><footer class><hr/><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.2.3</a> © 2024</p><ul><li><a href="https://github.com/taichimaeda">GitHub</a></li><li><a href="https://www.linkedin.com/in/taichi-maeda-b43348197/">LinkedIn</a></li></ul></footer></div></body><script type="application/javascript">function c(){let t=this.parentElement;t.classList.toggle("is-collapsed");let l=t.classList.contains("is-collapsed")?this.scrollHeight:t.scrollHeight;t.style.maxHeight=l+"px";let o=t,e=t.parentElement;for(;e;){if(!e.classList.contains("callout"))return;let n=e.classList.contains("is-collapsed")?e.scrollHeight:e.scrollHeight+o.scrollHeight;e.style.maxHeight=n+"px",o=e,e=e.parentElement}}function i(){let t=document.getElementsByClassName("callout is-collapsible");for(let s of t){let l=s.firstElementChild;if(l){l.addEventListener("click",c),window.addCleanup(()=>l.removeEventListener("click",c));let e=s.classList.contains("is-collapsed")?l.scrollHeight:s.scrollHeight;s.style.maxHeight=e+"px"}}}document.addEventListener("nav",i);window.addEventListener("resize",i);
+</script><script type="module">
+          let mermaidImport = undefined
+          document.addEventListener('nav', async () => {
+            if (document.querySelector("code.mermaid")) {
+              mermaidImport ||= await import('https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs')
+              const mermaid = mermaidImport.default
+              const darkMode = document.documentElement.getAttribute('saved-theme') === 'dark'
+              mermaid.initialize({
+                startOnLoad: false,
+                securityLevel: 'loose',
+                theme: darkMode ? 'dark' : 'default'
+              })
+
+              await mermaid.run({
+                querySelector: '.mermaid'
+              })
+            }
+          });
+          </script><script src="../../postscript.js" type="module"></script></html>

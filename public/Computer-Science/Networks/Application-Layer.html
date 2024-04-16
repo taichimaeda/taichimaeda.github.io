@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Application Layer</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM Plex Mono&amp;family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="Application Layer"/><meta property="og:description" content="Application Layer World Wide Web WWW is based on the idea of hypertext and hyperlinks. It was extremely successful due to the following factors: simplicity of HTML simplicity of HTTP low entry barrier for publishers GUI browsers (e.g."/><meta property="og:image" content="https://taichimaeda.github.io/static/og-image.png"/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="Application Layer World Wide Web WWW is based on the idea of hypertext and hyperlinks. It was extremely successful due to the following factors: simplicity of HTML simplicity of HTTP low entry barrier for publishers GUI browsers (e.g."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="Computer-Science/Networks/Application-Layer"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h1 class="page-title"><a href="../..">🥝 Taichi's Obsidian</a></h1><div class="spacer mobile-only"></div><div class="search"><div id="search-icon"><p>Search</p><div></div><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search</title><desc id="desc">Search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></div><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="search-layout" data-preview="true"></div></div></div></div><div class="darkmode"><input class="toggle" id="darkmode-toggle" type="checkbox" tabindex="-1"/><label id="toggle-label-light" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg></label><label id="toggle-label-dark" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></label></div><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[{&quot;path&quot;:&quot;Computer-Science&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Computer-Science/Algorithms&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Computer-Science/Algorithms/String-Algorithms&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Computer-Science/Networks&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Computer-Science/Operating-Systems&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Computer-Science/Theory-of-Computation&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Computer-Science/Theory-of-Computation/Introduction-to-the-Theory-of-Computation&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Engineering&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Engineering/Project-Management&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Engineering/Project-Management/Git-and-GitHub&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Projects&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Projects/Over-the-Wire&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Projects/Rustonomicon&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Projects/Type-Challenges&quot;,&quot;collapsed&quot;:true}]"><h1>Explorer</h1><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Computer-Science"><button class="folder-button"><span class="folder-title">Computer Science</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Computer-Science"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Computer-Science/Algorithms"><button class="folder-button"><span class="folder-title">Algorithms</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Computer-Science/Algorithms"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Computer-Science/Algorithms/String-Algorithms"><button class="folder-button"><span class="folder-title">String Algorithms</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Computer-Science/Algorithms/String-Algorithms"><li><a href="../../Computer-Science/Algorithms/String-Algorithms/KMP-Algorithm" data-for="Computer-Science/Algorithms/String-Algorithms/KMP-Algorithm">KMP Algorithm</a></li><li><a href="../../Computer-Science/Algorithms/String-Algorithms/Z-Algorithm" data-for="Computer-Science/Algorithms/String-Algorithms/Z-Algorithm">Z Algorithm</a></li></ul></div></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Computer-Science/Networks"><button class="folder-button"><span class="folder-title">Networks</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Computer-Science/Networks"><li><a href="../../Computer-Science/Networks/Application-Layer" data-for="Computer-Science/Networks/Application-Layer">Application Layer</a></li><li><a href="../../Computer-Science/Networks/Data-Link-Layer" data-for="Computer-Science/Networks/Data-Link-Layer">Data Link Layer</a></li><li><a href="../../Computer-Science/Networks/Network-Layer" data-for="Computer-Science/Networks/Network-Layer">Network Layer</a></li><li><a href="../../Computer-Science/Networks/Network-Security" data-for="Computer-Science/Networks/Network-Security">Network Security</a></li><li><a href="../../Computer-Science/Networks/OSI-Model" data-for="Computer-Science/Networks/OSI-Model">OSI Model</a></li><li><a href="../../Computer-Science/Networks/Physical-Layer" data-for="Computer-Science/Networks/Physical-Layer">Physical Layer</a></li><li><a href="../../Computer-Science/Networks/Transport-Layer" data-for="Computer-Science/Networks/Transport-Layer">Transport Layer</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Computer-Science/Operating-Systems"><button class="folder-button"><span class="folder-title">Operating Systems</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Computer-Science/Operating-Systems"><li><a href="../../Computer-Science/Operating-Systems/Device-Management" data-for="Computer-Science/Operating-Systems/Device-Management">Device Management</a></li><li><a href="../../Computer-Science/Operating-Systems/Disk-Management" data-for="Computer-Science/Operating-Systems/Disk-Management">Disk Management</a></li><li><a href="../../Computer-Science/Operating-Systems/File-Systems" data-for="Computer-Science/Operating-Systems/File-Systems">File Systems</a></li><li><a href="../../Computer-Science/Operating-Systems/Memory-Management" data-for="Computer-Science/Operating-Systems/Memory-Management">Memory Management</a></li><li><a href="../../Computer-Science/Operating-Systems/Processes" data-for="Computer-Science/Operating-Systems/Processes">Processes</a></li><li><a href="../../Computer-Science/Operating-Systems/Synchronisation" data-for="Computer-Science/Operating-Systems/Synchronisation">Synchronisation</a></li><li><a href="../../Computer-Science/Operating-Systems/Threads" data-for="Computer-Science/Operating-Systems/Threads">Threads</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Computer-Science/Theory-of-Computation"><button class="folder-button"><span class="folder-title">Theory of Computation</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Computer-Science/Theory-of-Computation"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Computer-Science/Theory-of-Computation/Introduction-to-the-Theory-of-Computation"><button class="folder-button"><span class="folder-title">Introduction to the Theory of Computation</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Computer-Science/Theory-of-Computation/Introduction-to-the-Theory-of-Computation"><li><a href="../../Computer-Science/Theory-of-Computation/Introduction-to-the-Theory-of-Computation/Introduction-to-the-Theory-of-Computation---Chapter-1" data-for="Computer-Science/Theory-of-Computation/Introduction-to-the-Theory-of-Computation/Introduction-to-the-Theory-of-Computation---Chapter-1">Introduction to the Theory of Computation - Chapter 1</a></li></ul></div></li></ul></div></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Engineering"><button class="folder-button"><span class="folder-title">Engineering</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Engineering"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Engineering/Project-Management"><button class="folder-button"><span class="folder-title">Project Management</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Engineering/Project-Management"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Engineering/Project-Management/Git-and-GitHub"><button class="folder-button"><span class="folder-title">Git and GitHub</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Engineering/Project-Management/Git-and-GitHub"><li><a href="../../Engineering/Project-Management/Git-and-GitHub/Editing-Past-Commits" data-for="Engineering/Project-Management/Git-and-GitHub/Editing-Past-Commits">Editing Past Commits</a></li><li><a href="../../Engineering/Project-Management/Git-and-GitHub/Git-Hooks" data-for="Engineering/Project-Management/Git-and-GitHub/Git-Hooks">Git Hooks</a></li><li><a href="../../Engineering/Project-Management/Git-and-GitHub/Git-Internals" data-for="Engineering/Project-Management/Git-and-GitHub/Git-Internals">Git Internals</a></li><li><a href="../../Engineering/Project-Management/Git-and-GitHub/Git-Maintainance" data-for="Engineering/Project-Management/Git-and-GitHub/Git-Maintainance">Git Maintainance</a></li><li><a href="../../Engineering/Project-Management/Git-and-GitHub/Golden-Rule-of-Rebasing" data-for="Engineering/Project-Management/Git-and-GitHub/Golden-Rule-of-Rebasing">Golden Rule of Rebasing</a></li><li><a href="../../Engineering/Project-Management/Git-and-GitHub/Ours-and-Theirs" data-for="Engineering/Project-Management/Git-and-GitHub/Ours-and-Theirs">Ours and Theirs</a></li><li><a href="../../Engineering/Project-Management/Git-and-GitHub/Rebasing-Pushed-Branches" data-for="Engineering/Project-Management/Git-and-GitHub/Rebasing-Pushed-Branches">Rebasing Pushed Branches</a></li><li><a href="../../Engineering/Project-Management/Git-and-GitHub/Traversing-Parent-Commits" data-for="Engineering/Project-Management/Git-and-GitHub/Traversing-Parent-Commits">Traversing Parent Commits</a></li><li><a href="../../Engineering/Project-Management/Git-and-GitHub/Upstream-and-Remote-Tracking-Branches" data-for="Engineering/Project-Management/Git-and-GitHub/Upstream-and-Remote-Tracking-Branches">Upstream and Remote-Tracking Branches</a></li></ul></div></li></ul></div></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Projects"><button class="folder-button"><span class="folder-title">Projects</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Projects"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Projects/Over-the-Wire"><button class="folder-button"><span class="folder-title">Over the Wire</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Projects/Over-the-Wire"><li><a href="../../Projects/Over-the-Wire/Over-the-Wire---Bandit" data-for="Projects/Over-the-Wire/Over-the-Wire---Bandit">Over the Wire - Bandit</a></li><li><a href="../../Projects/Over-the-Wire/Over-the-Wire---Natas" data-for="Projects/Over-the-Wire/Over-the-Wire---Natas">Over the Wire - Natas</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Projects/Rustonomicon"><button class="folder-button"><span class="folder-title">Rustonomicon</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Projects/Rustonomicon"><li><a href="../../Projects/Rustonomicon/Data-Layout" data-for="Projects/Rustonomicon/Data-Layout">Data Layout</a></li><li><a href="../../Projects/Rustonomicon/Ownership-and-Lifetimes" data-for="Projects/Rustonomicon/Ownership-and-Lifetimes">Ownership and Lifetimes</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Projects/Type-Challenges"><button class="folder-button"><span class="folder-title">Type Challenges</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Projects/Type-Challenges"><li><a href="../../Projects/Type-Challenges/Any-Type" data-for="Projects/Type-Challenges/Any-Type">Any Type</a></li><li><a href="../../Projects/Type-Challenges/Compute" data-for="Projects/Type-Challenges/Compute">Compute</a></li><li><a href="../../Projects/Type-Challenges/Conditional-Types" data-for="Projects/Type-Challenges/Conditional-Types">Conditional Types</a></li><li><a href="../../Projects/Type-Challenges/Empty-Objects" data-for="Projects/Type-Challenges/Empty-Objects">Empty Objects</a></li><li><a href="../../Projects/Type-Challenges/Index-Signatures" data-for="Projects/Type-Challenges/Index-Signatures">Index Signatures</a></li><li><a href="../../Projects/Type-Challenges/Indexing" data-for="Projects/Type-Challenges/Indexing">Indexing</a></li><li><a href="../../Projects/Type-Challenges/Inference" data-for="Projects/Type-Challenges/Inference">Inference</a></li><li><a href="../../Projects/Type-Challenges/Intersection-and-Union" data-for="Projects/Type-Challenges/Intersection-and-Union">Intersection and Union</a></li><li><a href="../../Projects/Type-Challenges/Keyof" data-for="Projects/Type-Challenges/Keyof">Keyof</a></li><li><a href="../../Projects/Type-Challenges/Literal-Types" data-for="Projects/Type-Challenges/Literal-Types">Literal Types</a></li><li><a href="../../Projects/Type-Challenges/Local-Variables" data-for="Projects/Type-Challenges/Local-Variables">Local Variables</a></li><li><a href="../../Projects/Type-Challenges/Mapped-Types" data-for="Projects/Type-Challenges/Mapped-Types">Mapped Types</a></li><li><a href="../../Projects/Type-Challenges/Tail-Recursion" data-for="Projects/Type-Challenges/Tail-Recursion">Tail Recursion</a></li><li><a href="../../Projects/Type-Challenges/Type-Equality" data-for="Projects/Type-Challenges/Type-Equality">Type Equality</a></li><li><a href="../../Projects/Type-Challenges/Type-Hierarchy" data-for="Projects/Type-Challenges/Type-Hierarchy">Type Hierarchy</a></li><li><a href="../../Projects/Type-Challenges/Union-to-Tuples" data-for="Projects/Type-Challenges/Union-to-Tuples">Union to Tuples</a></li><li><a href="../../Projects/Type-Challenges/Void-Type" data-for="Projects/Type-Challenges/Void-Type">Void Type</a></li></ul></div></li></ul></div></li><li><a href="../../Home" data-for="Home">Home</a></li></ul></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">/</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../Computer-Science/">Computer Science</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../Computer-Science/Networks/">Networks</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Application Layer</a></div></nav><h1 class="article-title">Application Layer</h1><p show-comma="true" class="content-meta"><span>Mar 23, 2023</span><span>12 min read</span></p></div></div><article class="popover-hint"><h1 id="application-layer">Application Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#application-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="world-wide-web">World Wide Web<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#world-wide-web" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>WWW is based on the idea of hypertext and hyperlinks. It was extremely successful due to the following factors:</p>
+<ul>
+<li>simplicity of HTML</li>
+<li>simplicity of HTTP</li>
+<li>low entry barrier for publishers</li>
+<li>GUI browsers (e.g. Mosaic, Netescape)</li>
+</ul>
+<p>An end system called a host may run multiple programs which run multiple processes. A process is addressed within its host by a port number.</p>
+<p>Applications use the network through sockets, which is an interface provided by the operating system.</p>
+<p>Architecture of a typical network communication:</p>
+<ul>
+<li>Client application
+<ol>
+<li>Create a socket <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align:-0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.719ex" height="1.645ex" role="img" focusable="false" viewBox="0 -705 760 727" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-1-TEX-I-1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D436" xlink:href="#MJX-1-TEX-I-1D436"></use></g></g></g></svg></mjx-container> by connecting to host <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align:0;" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 888 683" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-2-TEX-I-1D43B" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 219 683Q260 681 355 681Q389 681 418 681T463 682T483 682Q499 682 499 672Q499 670 497 658Q492 641 487 638H485Q483 638 480 638T473 638T464 637T455 637Q416 636 405 634T387 623Q384 619 355 500Q348 474 340 442T328 395L324 380Q324 378 469 378H614L615 381Q615 384 646 504Q674 619 674 627T617 637Q594 637 587 639T580 648Q580 650 582 660Q586 677 588 679T604 682Q609 682 646 681T740 680Q802 680 835 681T871 682Q888 682 888 672Q888 645 876 638H874Q872 638 869 638T862 638T853 637T844 637Q805 636 794 634T776 623Q773 618 704 340T634 58Q634 51 638 51Q646 48 692 46H723Q729 38 729 37T726 19Q722 6 716 0H701Q664 2 567 2Q533 2 504 2T458 2T437 1Q420 1 420 10Q420 15 423 24Q428 43 433 45Q437 46 448 46H454Q481 46 514 49Q520 50 522 50T528 55T534 64T540 82T547 110T558 153Q565 181 569 198Q602 330 602 331T457 332H312L279 197Q245 63 245 58Q245 51 253 49T303 46H334Q340 38 340 37T337 19Q333 6 327 0H312Q275 2 178 2Q144 2 115 2T69 2T48 1Q31 1 31 10Q31 12 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D43B" xlink:href="#MJX-2-TEX-I-1D43B"></use></g></g></g></svg></mjx-container> on port <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align:0;" xmlns="http://www.w3.org/2000/svg" width="1.699ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 751 683" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-3-TEX-I-1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-3-TEX-I-1D443"></use></g></g></g></svg></mjx-container>.</li>
+<li>Read and write data using the socket <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align:-0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.719ex" height="1.645ex" role="img" focusable="false" viewBox="0 -705 760 727" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-4-TEX-I-1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D436" xlink:href="#MJX-4-TEX-I-1D436"></use></g></g></g></svg></mjx-container>.</li>
+<li>Disconnect by destroying <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align:-0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.719ex" height="1.645ex" role="img" focusable="false" viewBox="0 -705 760 727" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-5-TEX-I-1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D436" xlink:href="#MJX-5-TEX-I-1D436"></use></g></g></g></svg></mjx-container>.</li>
+</ol>
+</li>
+<li>Server application
+<ol>
+<li>Create a socket <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align:-0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.459ex" height="1.645ex" role="img" focusable="false" viewBox="0 -705 645 727" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-6-TEX-I-1D446" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D446" xlink:href="#MJX-6-TEX-I-1D446"></use></g></g></g></svg></mjx-container> by accepting a connection on host <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align:0;" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 888 683" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-7-TEX-I-1D43B" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 219 683Q260 681 355 681Q389 681 418 681T463 682T483 682Q499 682 499 672Q499 670 497 658Q492 641 487 638H485Q483 638 480 638T473 638T464 637T455 637Q416 636 405 634T387 623Q384 619 355 500Q348 474 340 442T328 395L324 380Q324 378 469 378H614L615 381Q615 384 646 504Q674 619 674 627T617 637Q594 637 587 639T580 648Q580 650 582 660Q586 677 588 679T604 682Q609 682 646 681T740 680Q802 680 835 681T871 682Q888 682 888 672Q888 645 876 638H874Q872 638 869 638T862 638T853 637T844 637Q805 636 794 634T776 623Q773 618 704 340T634 58Q634 51 638 51Q646 48 692 46H723Q729 38 729 37T726 19Q722 6 716 0H701Q664 2 567 2Q533 2 504 2T458 2T437 1Q420 1 420 10Q420 15 423 24Q428 43 433 45Q437 46 448 46H454Q481 46 514 49Q520 50 522 50T528 55T534 64T540 82T547 110T558 153Q565 181 569 198Q602 330 602 331T457 332H312L279 197Q245 63 245 58Q245 51 253 49T303 46H334Q340 38 340 37T337 19Q333 6 327 0H312Q275 2 178 2Q144 2 115 2T69 2T48 1Q31 1 31 10Q31 12 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D43B" xlink:href="#MJX-7-TEX-I-1D43B"></use></g></g></g></svg></mjx-container> on port <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align:0;" xmlns="http://www.w3.org/2000/svg" width="1.699ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 751 683" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-8-TEX-I-1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-8-TEX-I-1D443"></use></g></g></g></svg></mjx-container>.</li>
+<li>Read and write data using the socket <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align:-0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.719ex" height="1.645ex" role="img" focusable="false" viewBox="0 -705 760 727" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-9-TEX-I-1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D436" xlink:href="#MJX-9-TEX-I-1D436"></use></g></g></g></svg></mjx-container>.</li>
+<li>Disconnect by destroy <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align:-0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.459ex" height="1.645ex" role="img" focusable="false" viewBox="0 -705 645 727" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-10-TEX-I-1D446" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D446" xlink:href="#MJX-10-TEX-I-1D446"></use></g></g></g></svg></mjx-container>.</li>
+</ol>
+</li>
+</ul>
+<p>Some applications have processes that act both as clients and servers, often called Peer-to-Peer (P2P) architecture.</p>
+<h3 id="hyper-text-transfer-protocol">Hyper-Text Transfer Protocol<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hyper-text-transfer-protocol" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The main purpose of HTTP is to provide access to Web objects through a connection-oriented transport mechanism.</p>
+<ul>
+<li>Consists of a sequence of requests issued by the client.</li>
+<li>Responses issued by the server, each in response to a single request.</li>
+<li>Stateless protocol.</li>
+</ul>
+<p>HTTP runs on port 80 with TCP.</p>
+<p>Example of an HTTP request:</p>
+<pre><code>GET /~kgk/212/index.html HTTP/1.1
+Host: www.doc.ic.ac.uk
+User-agent: Mozilla/5.0
+Accept-Language: en-GB
+</code></pre>
+<p><code>Host</code> is passed as a parameter so that server can host multiple virtual sites e.g. Dokku</p>
+<p>Example of an HTTP response:</p>
+<pre><code>HTTP/1.1 200 OK
+Date: Thu, 26 Jan 2017 16:00:00 GMT
+Server: Apache
+Last-Modified: Sat, 21 Jan 2017 20:05:55 GMT
+Accept-Ranges: bytes
+Content-Length: 5470
+Content-Type: text/html
+...
+&lt;!DOCTYPE html>
+...
+</code></pre>
+<p>Telnet allows us to send plain-text commands directly to a server listening on a specific port.</p>
+<h4 id="protocol-version-of-http">Protocol Version of HTTP<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#protocol-version-of-http" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>A HTTP protocol should always include a version number.</p>
+<p>The first version of HTTP used one TCP connection per object, which is both an inefficient use of the network and the operating system.</p>
+<p>HTTP/1.1 introduced persistent connections, in which multiple requests and responses can be issued. <code>Connection: close</code> in the request and response asks the server/client to close the persistent connection.</p>
+<p>HTTP/2 is expected to completely replace HTTP/1.x within the next few years. In HTTP/2, content is binary, connection is not ordered/blocking and thus capable of using a single (TCP) connection for parallelism.</p>
+<h4 id="http-methods">HTTP Methods<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#http-methods" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><code>GET</code>: retrieves the object at the URL.</li>
+<li><code>POST</code>: submits the enclosed data to the server.
+<ul>
+<li>Not idempotent e.g. <code>x = x + 1</code>.</li>
+</ul>
+</li>
+<li><code>HEAD</code>: only retrieves the response header of the object at the URL.</li>
+<li><code>PUT</code>: requests the enclosed data to be stored under the URL.
+<ul>
+<li>Idempotent e.g. <code>x = 4</code>.</li>
+</ul>
+</li>
+<li><code>DELETE</code>: requests the object at the URL to be deleted.</li>
+<li><code>OPTIONS</code>: requests the available communication options for the object at the URL.</li>
+</ul>
+<h4 id="http-headers">HTTP Headers<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#http-headers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Object characterisation
+<ul>
+<li>e.g. Content-Type, Content-Length, Content-Encoding</li>
+</ul>
+</li>
+<li>Content negotiation
+<ul>
+<li>e.g. Accept-Charset, Accept-Encoding</li>
+</ul>
+</li>
+<li>Cache management
+<ul>
+<li>e.g. Expires, Last-Modified, ETag</li>
+</ul>
+</li>
+<li>Explicit cache control
+<ul>
+<li>e.g. Cache-Control</li>
+</ul>
+</li>
+<li>Method-specific responses
+<ul>
+<li>e.g. Allow</li>
+</ul>
+</li>
+<li>Authorisation/identification
+<ul>
+<li>e.g. Authorization</li>
+</ul>
+</li>
+</ul>
+<h4 id="http-status-codes">HTTP Status Codes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#http-status-codes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>1xx: Informational</li>
+<li>2xx: Successful operation</li>
+<li>3xx: Redirection
+<ul>
+<li>Moved permanently (301)</li>
+<li>Found/Moved temporarily (302)</li>
+</ul>
+</li>
+<li>4xx: Client error
+<ul>
+<li>Malformed request (400)</li>
+<li>Unauthorised (401)</li>
+<li>Object not found (404)</li>
+<li>Method not allowed (405)</li>
+</ul>
+</li>
+<li>5xx: Server error
+<ul>
+<li>Internal server error (500)</li>
+<li>Service overloaded (503)</li>
+</ul>
+</li>
+</ul>
+<h4 id="structure-of-http-request">Structure of HTTP Request<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#structure-of-http-request" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ol>
+<li>Request line
+<ol>
+<li>Method (e.g. <code>GET</code>)</li>
+<li>Space</li>
+<li>URL (e.g. <code>/~kgk/212/index.html</code>)</li>
+<li>Space</li>
+<li>Protocol version (e.g. <code>HTTP/1.1</code>)</li>
+</ol>
+</li>
+<li>Header lines (optional)
+<ol>
+<li>Header name (e.g. <code>Host</code>)</li>
+<li>Colon</li>
+<li>Space</li>
+<li>Header value (e.g. <code>www.doc.ic.ac.uk</code>)</li>
+</ol>
+</li>
+<li>Empty line</li>
+<li>Object body (optional)</li>
+<li>Line terminator (CRLF)</li>
+</ol>
+<h4 id="structure-of-http-response">Structure of HTTP Response<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#structure-of-http-response" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ol>
+<li>Status line
+<ol>
+<li>Protocol version (e.g. <code>HTTP/1.1</code>)</li>
+<li>Space</li>
+<li>Status code (e.g. <code>405</code>)</li>
+<li>Space</li>
+<li>Status message (e.g. <code>Method Not Allowed</code>)</li>
+</ol>
+</li>
+<li>Header lines (optional)
+<ol>
+<li>Header name (e.g. <code>Date</code>)</li>
+<li>Colon</li>
+<li>Space</li>
+<li>Header value (e.g. <code>Thu, 26 Jan 2017 16:00:00 GMT</code>)</li>
+</ol>
+</li>
+<li>Empty line</li>
+<li>Object body (optional)</li>
+<li>Line terminator (CRLF)
+<ol>
+<li>CR (<code>\r</code>) and LF (<code>\n</code>) both required for Windows and HTTP.</li>
+<li>Only LF (<code>\n</code>) required for Unix.</li>
+</ol>
+</li>
+</ol>
+<h3 id="web-caching">Web Caching<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#web-caching" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>With web caching, a client request goes to a proxy/cache server.</p>
+<p>The proxy may:</p>
+<ul>
+<li>Forward the request to the origin server, acting as a client.</li>
+<li>Retrieve the response from the origin server.</li>
+<li>Cache the object for some time.</li>
+<li>Forward the response back to the client.</li>
+</ul>
+<p>The benefits of web caching include:</p>
+<ul>
+<li>Reduced latency</li>
+<li>Reduced network traffic</li>
+<li>Privacy</li>
+<li>Protection from outside access</li>
+</ul>
+<h4 id="cache-control-for-web-caching">Cache Control for Web Caching<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cache-control-for-web-caching" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><code>HEAD</code> request is used to obtain cache information about the object.
+<ul>
+<li>e.g. to see if object has been updated.</li>
+</ul>
+</li>
+<li>Servers specify explicit expiration times in HTTP headers.</li>
+<li><code>Cache-Control: no-cache</code>
+<ul>
+<li>Request: proxy should not return the cache.</li>
+<li>Response: client should not cache this object</li>
+</ul>
+</li>
+<li><code>Cache-Control: max-age=X</code>
+<ul>
+<li>Request: proxy should return the cache if less than <code>X</code> seconds old.</li>
+<li>Response: client should keep the cache up to <code>X</code> seconds.
+<ul>
+<li>Should be used with <code>must-revalidate</code> otherwise the restriction is optional.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Expires: X</code>
+<ul>
+<li>Request: proxy should return the cache if before <code>X</code>.</li>
+<li>Response: client should keep the cache until <code>X</code>.
+<ul>
+<li>Should be used with <code>must-revalidate</code> otherwise the restriction is optional.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>If-Modified-Since: X</code>
+<ul>
+<li>Request: proxy should only return the cache if modified since <code>X</code>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="sessions-and-cookies">Sessions and Cookies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sessions-and-cookies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>HTTP provides Cookies as the means for higher-level applications to maintain stateful sessions.</p>
+<ul>
+<li>Request: <code>Cookie</code> header is used to tell the server that the request belongs to the given session.</li>
+<li>Response: <code>Set-Cookie</code> header is used to tell the client to store the given cookie as a session identifier.</li>
+</ul>
+<h3 id="dynamic-webpages">Dynamic Webpages<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dynamic-webpages" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Common Gateway Interface (CGI)
+<ul>
+<li>URL specifies the program and its parameters.</li>
+<li>Server starts a process to execute the program and return response.</li>
+<li>Stateless.</li>
+</ul>
+</li>
+<li>Servlets
+<ul>
+<li>Java-based solution for CGI</li>
+<li>Stateful.</li>
+</ul>
+</li>
+<li>Embedded scripts
+<ul>
+<li>Server-side: PHP</li>
+<li>Client-side: JavaScript</li>
+</ul>
+</li>
+</ul>
+<h3 id="ip-addresses-and-host-names">IP Addresses and Host Names<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ip-addresses-and-host-names" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>An end system is identified and addressed by its IP address.</p>
+<ul>
+<li>32 bits in IPv4</li>
+<li>128 bits in IPv6</li>
+</ul>
+<p>An IP address is easy to process for computers but are not practical for everyday use. Host names are used for this purpose.</p>
+<p>The mapping from host names to ip addresses are resolved by:</p>
+<ul>
+<li><code>/etc/hosts</code> file
+<ul>
+<li>User-defined host names.</li>
+<li>Used up to 1983 when there were not many hosts.</li>
+</ul>
+</li>
+<li>Domain Name System (DNS)
+<ul>
+<li>Distributed lookup facility.</li>
+</ul>
+</li>
+</ul>
+<h3 id="domain-name-system">Domain Name System<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#domain-name-system" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Primary function of the DNS is to map a name to an IP address.</p>
+<p>The name space was divided into non-overlapping zones, each of which is handled by one or more name servers.</p>
+<ul>
+<li>Root servers
+<ul>
+<li>Holds the map from the top-level domain to the associated NS.</li>
+</ul>
+</li>
+<li>Top-level domain servers
+<ul>
+<li>Holds the map from the second-level domain to the associated NS.</li>
+</ul>
+</li>
+<li>Authoritative server
+<ul>
+<li>Holds the map of public hosts within the given domain.</li>
+</ul>
+</li>
+</ul>
+<p>DNS runs on top of UDP because it can simply resend the request if no response is received.</p>
+<h4 id="resource-records-of-dns">Resource Records of DNS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#resource-records-of-dns" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>DNS is essentially a database that contains Resource Records (RR) with the following columns:</p>
+<p>There are several values available for <code>Type</code> column in RR:</p>
+<ul>
+<li>Type A
+<ul>
+<li>Maps a host name to its IP address.</li>
+<li><code>Name</code> is the host name.</li>
+<li><code>Value</code> is the IP address.</li>
+</ul>
+</li>
+<li>Type NS
+<ul>
+<li>Maps a host name to its name server.</li>
+<li>NS holds Type A/NS record for the host name.</li>
+<li><code>Name</code> is the host name.</li>
+<li><code>Value</code> is the NS host name.</li>
+</ul>
+</li>
+<li>Type CNAME
+<ul>
+<li>Maps a host name to its canonical host name.</li>
+<li><code>Name</code> is the host name (alias).</li>
+<li><code>Value</code> is the canonical host name.</li>
+<li>e.g. www3.imperial.ac.uk to <a href="http://www.imperial.ac.uk" class="external">www.imperial.ac.uk<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li>Type MX
+<ul>
+<li>Maps a host name to its mail exchange server .</li>
+<li><code>Name</code> is the host name.</li>
+<li><code>Value</code> is the host name for the MX server that handles mail for the given host name.</li>
+</ul>
+</li>
+</ul>
+<p><code>TTL</code> column specifies the time to live, which tells how long the record should be valid for.</p>
+<h4 id="round-robin-dns">Round Robin DNS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#round-robin-dns" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Round robin DNS is a technique for balancing the load of geographically-distributed Web servers.</p>
+<ul>
+<li>DNS server holds a mapping from host name to multiple name servers, one of which is returned in round robin order per request.</li>
+<li>TTL should be small because these may constantly change depending on server load.</li>
+</ul>
+<h4 id="dns-caching">DNS Caching<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dns-caching" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>The benefits of DNS caching include:</p>
+<ul>
+<li>
+<p>Improved performance</p>
+</li>
+<li>
+<p>Reduced load on the DNS infrastructure</p>
+</li>
+<li>
+<p><code>/etc/resolv.conf</code> file contains a list of DNS cache servers</p>
+<ul>
+<li>Typically only contains the router’s IP address.</li>
+<li>The router queries the local ISP’s DNS cache server.</li>
+<li>The local IPS’s DNS cache server returns the DNS cache, or queries the authoritative NS (e.g. root, top-level).</li>
+</ul>
+</li>
+</ul>
+<p>DNS cache poisoning is a type of cyber attack that exploits a vulnerability in the DNS to redirect users to fraudulent websites. This can be prevented by the authoritative NS signing RR etc.</p>
+<h3 id="content-distribution-networks">Content Distribution Networks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content-distribution-networks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Streaming content to a large number users of simultaneously:</p>
+<ul>
+<li>Single large server
+<ul>
+<li>Single point of failure.</li>
+<li>Point of network congestion.</li>
+<li>Long path to distance users.</li>
+</ul>
+</li>
+<li>Content distributed networks
+<ul>
+<li>Stores multiple copies of videos at multiple geographically distributed sites.</li>
+</ul>
+</li>
+</ul>
+<p>CDN cluster design strategies:</p>
+<ul>
+<li>Enter deep strategy
+<ul>
+<li>Push CDN servers deep into many access networks.</li>
+<li>10-100K servers.</li>
+</ul>
+</li>
+<li>Bring home strategy
+<ul>
+<li>Smaller number of larger clusters in PoPs near access networks.</li>
+<li>10-100 servers.</li>
+</ul>
+</li>
+</ul>
+<p>CDN cluster selection strategies:</p>
+<ul>
+<li>Pick a CDN node geographically closest to client.</li>
+<li>Pick a CDN node with shortest delay to client.
+<ul>
+<li>CDN nodes periodically ping local ISPs and report results to CDN DNS server.</li>
+</ul>
+</li>
+</ul>
+<p>CDN DNS server only knows the local DNS cache server, which may not be fully accurate:</p>
+<ul>
+<li>Public DNS
+<ul>
+<li>When DNS cache is unavailable, queries CDN DNS server with the client’s actual IP.
+<ul>
+<li>Performs better redirection.</li>
+</ul>
+</li>
+<li>e.g. 8.8.8.8 by Google, 1.1.1.1 by CloudFlare.</li>
+</ul>
+</li>
+<li>Client approach
+<ul>
+<li>By Netflix</li>
+<li>CDN DNS servers return a list of several CDN servers.</li>
+<li>Client pings and picks the best server based on RTT.</li>
+</ul>
+</li>
+</ul>
+<h2 id="electronic-mail">Electronic Mail<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#electronic-mail" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Features and goals of emails:</p>
+<ul>
+<li>Asynchronous communication</li>
+<li>One-to-many communication</li>
+<li>Multimedia content</li>
+</ul>
+<p>Architecture of email systems:</p>
+<ul>
+<li>User agent
+<ul>
+<li>Allows a user to read and write emails.</li>
+</ul>
+</li>
+<li>Mail transfer agent (mail sever)
+<ul>
+<li>Accept messages for remote delivery .
+<ul>
+<li>Store messages in a local persistent queue.</li>
+<li>Deliver messages to the destination server using the transport protocol.</li>
+</ul>
+</li>
+<li>Accept messages for local delivery.
+<ul>
+<li>Save messages in some local persistent mailbox.</li>
+<li>Allow user agents to access local mailboxes using the access protocol.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="simple-mail-transfer-protocol">Simple Mail Transfer Protocol<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#simple-mail-transfer-protocol" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>SMTP runs on port 25 with TCP.</p>
+<p>The standard message format has some serious limitations:</p>
+<ul>
+<li>No encryption.
+<ul>
+<li>SMTPS adds encryption by enabling TLS.</li>
+</ul>
+</li>
+<li>Only ASCII characters.</li>
+<li>Only supports text format.</li>
+</ul>
+<p>Multipurpose Internet Mail Extensions (MIME) specification defines useful extensions to SMTP:</p>
+<ul>
+<li><code>text/plain</code>: normal ASCII message.</li>
+<li><code>text/html</code>: HTML formatted message.</li>
+<li><code>image/jpeg</code>:  contains only a JPEG image.</li>
+<li><code>multipart/mixed</code>: contains multiple media parts.</li>
+</ul>
+<p>Example of SMTP message:</p>
+<pre><code>HELO example.com
+MAIL FROM: imperialcollege@example.com
+RCPT TO: email@ic.ac.uk
+DATA From: Imperial College &lt;imperialcollege@example.com>
+To: Test User &lt;email@ic.ac.uk>
+Subject: This is the subject!
+
+This is the body!
+.
+QUIT
+</code></pre>
+<h4 id="smtp-headers">SMTP Headers<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#smtp-headers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><code>To</code>: e-mail address(es) main destination</li>
+<li><code>Cc</code>: e-mail address(es) to send copies</li>
+<li><code>Bcc</code>: e-mail address(es) to send blind copies</li>
+<li><code>From</code>: name of sender(s)</li>
+<li><code>Sender</code>: e-mail address sender</li>
+<li><code>Received</code>: line added by each intermediate transfer agent</li>
+<li><code>Return-path</code>: return address</li>
+<li><code>Date</code>: the date and time the message was sent</li>
+<li><code>Subject</code>: short summary of the message</li>
+<li><code>Reply-To</code>: email address to which replies should be sent</li>
+</ul>
+<p>The <code>Sender</code> field is often the same as <code>From</code> and <code>Sender</code> so can be left out.</p>
+<h4 id="structure-of-smtp-message">Structure of SMTP Message<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#structure-of-smtp-message" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><code>HELO</code> line
+<ul>
+<li><code>HELO</code></li>
+<li>Space</li>
+<li>Host name</li>
+</ul>
+</li>
+<li>Header lines (optional)
+<ul>
+<li>Header name</li>
+<li>Space</li>
+<li>Header value</li>
+</ul>
+</li>
+<li>Empty line</li>
+<li>Message body</li>
+<li>A single dot <code>.</code></li>
+<li><code>QUIT</code> line</li>
+</ul>
+<p>SMTP client checks if a line of message body starts with a dot, and inserts another dot in front. SMTP server checks if a line of message body starts with a dot and another character, and deletes the first dot.</p>
+<h3 id="post-office-protocol">Post Office Protocol<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#post-office-protocol" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>SMTP assumes that the user agent and transfer agent run on the same host. POP3 allows a user to access the host mailbox from a different machine.</p>
+<p>POP3 runs on port 110 with TCP.</p>
+<p>Example of POP3 message:</p>
+<pre><code>+OK POP3 server ready
+USER kgk
++OK
+PASS longcatislong
++OK login successful
+LIST
+1 2505
+.
+RETR 1 (pops/sends message #1)
+DELE 1
+QUIT
++OK POP3 server disconnecting
+</code></pre>
+<h3 id="internet-message-access-protocol">Internet Message Access Protocol<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#internet-message-access-protocol" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>POP3 deletes retrieves message from the host by default. IMAP stores mail on the host server so that it can be accessed by multiple machines and users.</p>
+<h2 id="file-transfer">File Transfer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#file-transfer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="file-transfer-protocol">File Transfer Protocol<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#file-transfer-protocol" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="https://www.jscape.com/blog/active-v-s-passive-ftp-simplified" class="external">https://www.jscape.com/blog/active-v-s-passive-ftp-simplified<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<p>FTP enables the exchange of files between a client and a server.</p>
+<ul>
+<li>Uses two connections to transfer files:
+<ul>
+<li>Control connection is used to send commands and responses.</li>
+<li>Data connection is used to transfer the actual files.</li>
+</ul>
+</li>
+<li>Enables more reliable and efficient data transfer</li>
+</ul>
+<ul>
+<li>Active mode
+<ul>
+<li>Client establishes the control connection.</li>
+<li>Server establishes the data connection (i.e. server takes active role).
+<ul>
+<li>Client port is random, which may be blocked by firewall.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Passive mode
+<ul>
+<li>Client establishes the control connection.</li>
+<li>Client establishes the data connection (i.e. server takes passive role).
+<ul>
+<li>Client port is still random, but firewalls usually allow inbound traffic from sessions initiated by the client.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="other-application-layer-protocols">Other Application Layer Protocols<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#other-application-layer-protocols" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Secure Shell (SSH)
+<ul>
+<li>Direct encrypted communication.</li>
+</ul>
+</li>
+<li>Telnet
+<ul>
+<li>Plain text direct communication.</li>
+</ul>
+</li>
+<li>Simple Network Management Protocol (SNMP)
+<ul>
+<li>Enables a system administrator to manager network devices.</li>
+</ul>
+</li>
+<li>Network File System (NFS)
+<ul>
+<li>Enables file access over the network.</li>
+</ul>
+</li>
+<li>Dynamic Host Configuration Protocol (DHCP)
+<ul>
+<li>Allows devices to receive an IP address within the network.</li>
+</ul>
+</li>
+</ul><style>
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] > g > svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+</style></article><div class="page-footer"><hr/><script src="https://utteranc.es/client.js" repo="taichimaeda/taichimaeda.github.io" issue-term="pathname" theme="github-dark" crossorigin="anonymous" async></script></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" id="toc" class><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="toc-content"><ul class="overflow"><li class="depth-0"><a href="#application-layer" data-for="application-layer">Application Layer</a></li><li class="depth-1"><a href="#world-wide-web" data-for="world-wide-web">World Wide Web</a></li><li class="depth-2"><a href="#hyper-text-transfer-protocol" data-for="hyper-text-transfer-protocol">Hyper-Text Transfer Protocol</a></li><li class="depth-2"><a href="#web-caching" data-for="web-caching">Web Caching</a></li><li class="depth-2"><a href="#sessions-and-cookies" data-for="sessions-and-cookies">Sessions and Cookies</a></li><li class="depth-2"><a href="#dynamic-webpages" data-for="dynamic-webpages">Dynamic Webpages</a></li><li class="depth-2"><a href="#ip-addresses-and-host-names" data-for="ip-addresses-and-host-names">IP Addresses and Host Names</a></li><li class="depth-2"><a href="#domain-name-system" data-for="domain-name-system">Domain Name System</a></li><li class="depth-2"><a href="#content-distribution-networks" data-for="content-distribution-networks">Content Distribution Networks</a></li><li class="depth-1"><a href="#electronic-mail" data-for="electronic-mail">Electronic Mail</a></li><li class="depth-2"><a href="#simple-mail-transfer-protocol" data-for="simple-mail-transfer-protocol">Simple Mail Transfer Protocol</a></li><li class="depth-2"><a href="#post-office-protocol" data-for="post-office-protocol">Post Office Protocol</a></li><li class="depth-2"><a href="#internet-message-access-protocol" data-for="internet-message-access-protocol">Internet Message Access Protocol</a></li><li class="depth-1"><a href="#file-transfer" data-for="file-transfer">File Transfer</a></li><li class="depth-2"><a href="#file-transfer-protocol" data-for="file-transfer-protocol">File Transfer Protocol</a></li><li class="depth-1"><a href="#other-application-layer-protocols" data-for="other-application-layer-protocols">Other Application Layer Protocols</a></li></ul></div></div></div></div><footer class><hr/><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.2.3</a> © 2024</p><ul><li><a href="https://github.com/taichimaeda">GitHub</a></li><li><a href="https://www.linkedin.com/in/taichi-maeda-b43348197/">LinkedIn</a></li></ul></footer></div></body><script type="application/javascript">function c(){let t=this.parentElement;t.classList.toggle("is-collapsed");let l=t.classList.contains("is-collapsed")?this.scrollHeight:t.scrollHeight;t.style.maxHeight=l+"px";let o=t,e=t.parentElement;for(;e;){if(!e.classList.contains("callout"))return;let n=e.classList.contains("is-collapsed")?e.scrollHeight:e.scrollHeight+o.scrollHeight;e.style.maxHeight=n+"px",o=e,e=e.parentElement}}function i(){let t=document.getElementsByClassName("callout is-collapsible");for(let s of t){let l=s.firstElementChild;if(l){l.addEventListener("click",c),window.addCleanup(()=>l.removeEventListener("click",c));let e=s.classList.contains("is-collapsed")?l.scrollHeight:s.scrollHeight;s.style.maxHeight=e+"px"}}}document.addEventListener("nav",i);window.addEventListener("resize",i);
+</script><script type="module">
+          let mermaidImport = undefined
+          document.addEventListener('nav', async () => {
+            if (document.querySelector("code.mermaid")) {
+              mermaidImport ||= await import('https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs')
+              const mermaid = mermaidImport.default
+              const darkMode = document.documentElement.getAttribute('saved-theme') === 'dark'
+              mermaid.initialize({
+                startOnLoad: false,
+                securityLevel: 'loose',
+                theme: darkMode ? 'dark' : 'default'
+              })
+
+              await mermaid.run({
+                querySelector: '.mermaid'
+              })
+            }
+          });
+          </script><script src="../../postscript.js" type="module"></script></html>

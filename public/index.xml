@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>🥝 Taichi&#039;s Obsidian</title>
+      <link>https://taichimaeda.github.io</link>
+      <description>Last 10 notes on 🥝 Taichi&#039;s Obsidian</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Rebasing Pushed Branches</title>
+    <link>https://taichimaeda.github.io/Engineering/Project-Management/Git-and-GitHub/Rebasing-Pushed-Branches</link>
+    <guid>https://taichimaeda.github.io/Engineering/Project-Management/Git-and-GitHub/Rebasing-Pushed-Branches</guid>
+    <description>Rebasing Pushed Branches 「push済のブランチだけどリベースしたい！」というときの対処方法 (zenn.dev) Image we have pushed a feature branch but still want to rebase it, while avoiding the worst-case scenario ...</description>
+    <pubDate>Mon, 15 Apr 2024 14:58:27 GMT</pubDate>
+  </item><item>
+    <title>Golden Rule of Rebasing</title>
+    <link>https://taichimaeda.github.io/Engineering/Project-Management/Git-and-GitHub/Golden-Rule-of-Rebasing</link>
+    <guid>https://taichimaeda.github.io/Engineering/Project-Management/Git-and-GitHub/Golden-Rule-of-Rebasing</guid>
+    <description>Golden Rule of Rebasing The Golden Rule of Rebasing in Git | Axosoft (gitkraken.com) Quote The Golden Rule of Rebasing reads: “Never rebase while you’re on a public branch.” Or rather, ...</description>
+    <pubDate>Mon, 15 Apr 2024 14:49:38 GMT</pubDate>
+  </item><item>
+    <title>Ours and Theirs</title>
+    <link>https://taichimaeda.github.io/Engineering/Project-Management/Git-and-GitHub/Ours-and-Theirs</link>
+    <guid>https://taichimaeda.github.io/Engineering/Project-Management/Git-and-GitHub/Ours-and-Theirs</guid>
+    <description>Ours and Theirs git - ours vs theirs (nitaym.github.io) Warning This page talks about the ours and theirs in git checkout, used during merge conflicts ...</description>
+    <pubDate>Mon, 15 Apr 2024 13:36:07 GMT</pubDate>
+  </item><item>
+    <title>Git Maintainance</title>
+    <link>https://taichimaeda.github.io/Engineering/Project-Management/Git-and-GitHub/Git-Maintainance</link>
+    <guid>https://taichimaeda.github.io/Engineering/Project-Management/Git-and-GitHub/Git-Maintainance</guid>
+    <description>Git Maintenance Git - git-maintenance Documentation (git-scm.com) Run git maintaince inside your most frequently-accessed repositories to run cron jobs to optimise git repository ...</description>
+    <pubDate>Mon, 15 Apr 2024 07:58:59 GMT</pubDate>
+  </item><item>
+    <title>Upstream and Remote-Tracking Branches</title>
+    <link>https://taichimaeda.github.io/Engineering/Project-Management/Git-and-GitHub/Upstream-and-Remote-Tracking-Branches</link>
+    <guid>https://taichimaeda.github.io/Engineering/Project-Management/Git-and-GitHub/Upstream-and-Remote-Tracking-Branches</guid>
+    <description>Upstream and Remote-Tracking Branches Upstream branches are the branches on the remote repository e.g. main Remote tracking branches are the branches on the local repository which mirrors their corresponding upstream branches e.g.</description>
+    <pubDate>Mon, 15 Apr 2024 07:56:10 GMT</pubDate>
+  </item><item>
+    <title>Traversing Parent Commits</title>
+    <link>https://taichimaeda.github.io/Engineering/Project-Management/Git-and-GitHub/Traversing-Parent-Commits</link>
+    <guid>https://taichimaeda.github.io/Engineering/Project-Management/Git-and-GitHub/Traversing-Parent-Commits</guid>
+    <description>Traversing Commit What’s the difference between HEAD^ and HEAD~ in Git? - Stack Overflow ~2 means up two levels in the hierarchy Via the first parent if a commit has more than one parent ...</description>
+    <pubDate>Mon, 15 Apr 2024 07:54:31 GMT</pubDate>
+  </item><item>
+    <title>Editing Past Commits</title>
+    <link>https://taichimaeda.github.io/Engineering/Project-Management/Git-and-GitHub/Editing-Past-Commits</link>
+    <guid>https://taichimaeda.github.io/Engineering/Project-Management/Git-and-GitHub/Editing-Past-Commits</guid>
+    <description>Editing Past Commits Imagine we have a commit graph like this: A---B---C (feature, origin/feature) and we want to edit the commit B. Rebasing a Temporary Branch amending a single file in a past commit in git - Stack Overflow Create a temporary branch e.g.</description>
+    <pubDate>Mon, 15 Apr 2024 07:52:43 GMT</pubDate>
+  </item><item>
+    <title>Git Hooks</title>
+    <link>https://taichimaeda.github.io/Engineering/Project-Management/Git-and-GitHub/Git-Hooks</link>
+    <guid>https://taichimaeda.github.io/Engineering/Project-Management/Git-and-GitHub/Git-Hooks</guid>
+    <description>Git Hooks Git - Git Hooks (git-scm.com) Git hooks are scripts that are executed on specific events e.g. pre-commit, pre-push. By default, hooks are stored under .git/hooks, and Git executes the script with the file name corresponding to the event e.g.</description>
+    <pubDate>Mon, 15 Apr 2024 07:35:34 GMT</pubDate>
+  </item><item>
+    <title>Git Internals</title>
+    <link>https://taichimaeda.github.io/Engineering/Project-Management/Git-and-GitHub/Git-Internals</link>
+    <guid>https://taichimaeda.github.io/Engineering/Project-Management/Git-and-GitHub/Git-Internals</guid>
+    <description>Git Internals Git - Git Objects (git-scm.com) There are three types of git objects: Blob objects Tree objects Commit objects Unlike csv or subversion which keeps track of changes, ...</description>
+    <pubDate>Mon, 15 Apr 2024 07:32:56 GMT</pubDate>
+  </item><item>
+    <title>Ownership and Lifetimes</title>
+    <link>https://taichimaeda.github.io/Projects/Rustonomicon/Ownership-and-Lifetimes</link>
+    <guid>https://taichimaeda.github.io/Projects/Rustonomicon/Ownership-and-Lifetimes</guid>
+    <description>Ownership and Lifetimes TODO Ownership - The Rustonomicon (rust-lang.org) References References - The Rustonomicon (rust-lang.org) Rust’s references in a nutshell: Quote There ...</description>
+    <pubDate>Fri, 12 Apr 2024 12:31:59 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
