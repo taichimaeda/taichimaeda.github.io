@@ -6,6 +6,12 @@
       <description>Last 10 notes on 🥝 Taichi&#039;s Obsidian</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Floating Point Summation</title>
+    <link>https://taichimaeda.github.io/Mathematics/To-Be-Sorted/Floating-Point-Summation</link>
+    <guid>https://taichimaeda.github.io/Mathematics/To-Be-Sorted/Floating-Point-Summation</guid>
+    <description>Floating Point Summation document (psu.edu) Definition Given an infinite precision operator and machine precision operator : where: is the rounding-off error is the machine epsilon ...</description>
+    <pubDate>Sun, 02 Jun 2024 05:30:47 GMT</pubDate>
+  </item><item>
     <title>Rebasing Pushed Branches</title>
     <link>https://taichimaeda.github.io/Engineering/Version-Control/Rebasing-Pushed-Branches</link>
     <guid>https://taichimaeda.github.io/Engineering/Version-Control/Rebasing-Pushed-Branches</guid>
@@ -59,12 +65,6 @@
     <guid>https://taichimaeda.github.io/Engineering/Version-Control/Git-Internals</guid>
     <description>Git Internals Git - Git Objects (git-scm.com) There are three types of git objects: Blob objects Tree objects Commit objects Unlike csv or subversion which keeps track of changes, ...</description>
     <pubDate>Mon, 15 Apr 2024 07:32:56 GMT</pubDate>
-  </item><item>
-    <title>Chapter 2 - Ownership and Lifetimes</title>
-    <link>https://taichimaeda.github.io/Engineering/Programming-Languages/Rust/Rustonomicon/Chapter-2---Ownership-and-Lifetimes</link>
-    <guid>https://taichimaeda.github.io/Engineering/Programming-Languages/Rust/Rustonomicon/Chapter-2---Ownership-and-Lifetimes</guid>
-    <description>Chapter 2 - Ownership and Lifetimes TODO Ownership - The Rustonomicon (rust-lang.org) References References - The Rustonomicon (rust-lang.org) Rust’s references in a nutshell: ...</description>
-    <pubDate>Fri, 12 Apr 2024 12:31:59 GMT</pubDate>
   </item>
     </channel>
   </rss>

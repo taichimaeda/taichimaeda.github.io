@@ -5,49 +5,49 @@
     <loc>https://taichimaeda.github.io/Computer-Science/Algorithms/String-Algorithms/Z-Algorithm</loc>
     <lastmod>2024-03-05T15:21:04.886Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Computer-Science/Networks/Application-Layer</loc>
+    <loc>https://taichimaeda.github.io/Computer-Science/Networks/To-Be-Sorted/Application-Layer</loc>
     <lastmod>2023-03-22T18:46:15.408Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Computer-Science/Networks/Data-Link-Layer</loc>
+    <loc>https://taichimaeda.github.io/Computer-Science/Networks/To-Be-Sorted/Data-Link-Layer</loc>
     <lastmod>2023-03-17T13:08:52.242Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Computer-Science/Networks/Network-Layer</loc>
+    <loc>https://taichimaeda.github.io/Computer-Science/Networks/To-Be-Sorted/Network-Layer</loc>
     <lastmod>2023-03-23T05:59:59.429Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Computer-Science/Networks/Network-Security</loc>
+    <loc>https://taichimaeda.github.io/Computer-Science/Networks/To-Be-Sorted/Network-Security</loc>
     <lastmod>2023-03-23T18:46:38.491Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Computer-Science/Networks/OSI-Model</loc>
+    <loc>https://taichimaeda.github.io/Computer-Science/Networks/To-Be-Sorted/OSI-Model</loc>
     <lastmod>2023-03-22T17:44:46.636Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Computer-Science/Networks/Physical-Layer</loc>
+    <loc>https://taichimaeda.github.io/Computer-Science/Networks/To-Be-Sorted/Physical-Layer</loc>
     <lastmod>2023-03-22T16:24:28.721Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Computer-Science/Networks/Transport-Layer</loc>
+    <loc>https://taichimaeda.github.io/Computer-Science/Networks/To-Be-Sorted/Transport-Layer</loc>
     <lastmod>2023-03-23T02:41:22.163Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Computer-Science/Operating-Systems/Device-Management</loc>
+    <loc>https://taichimaeda.github.io/Computer-Science/Operating-Systems/To-Be-Sorted/Device-Management</loc>
     <lastmod>2023-03-24T17:22:30.995Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Computer-Science/Operating-Systems/Disk-Management</loc>
+    <loc>https://taichimaeda.github.io/Computer-Science/Operating-Systems/To-Be-Sorted/Disk-Management</loc>
     <lastmod>2023-03-31T15:31:18.755Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Computer-Science/Operating-Systems/File-Systems</loc>
+    <loc>https://taichimaeda.github.io/Computer-Science/Operating-Systems/To-Be-Sorted/File-Systems</loc>
     <lastmod>2023-03-31T18:10:57.970Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Computer-Science/Operating-Systems/Memory-Management</loc>
+    <loc>https://taichimaeda.github.io/Computer-Science/Operating-Systems/To-Be-Sorted/Memory-Management</loc>
     <lastmod>2023-03-24T06:22:04.758Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Computer-Science/Operating-Systems/Processes</loc>
+    <loc>https://taichimaeda.github.io/Computer-Science/Operating-Systems/To-Be-Sorted/Processes</loc>
     <lastmod>2023-04-01T17:17:34.097Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Computer-Science/Operating-Systems/Synchronisation</loc>
+    <loc>https://taichimaeda.github.io/Computer-Science/Operating-Systems/To-Be-Sorted/Synchronisation</loc>
     <lastmod>2023-03-31T23:54:48.164Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Computer-Science/Operating-Systems/Threads</loc>
+    <loc>https://taichimaeda.github.io/Computer-Science/Operating-Systems/To-Be-Sorted/Threads</loc>
     <lastmod>2023-04-02T02:46:45.309Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Computer-Science/Theory-of-Computation/Introduction-to-the-Theory-of-Computation/Introduction-to-the-Theory-of-Computation---Chapter-1</loc>
+    <loc>https://taichimaeda.github.io/Computer-Science/Theory-of-Computation/Introduction-to-the-Theory-of-Computation/Chapter-1</loc>
     <lastmod>2024-03-24T16:32:05.418Z</lastmod>
   </url><url>
     <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/Rust/Rustonomicon/Chapter-1---Data-Layout</loc>
@@ -136,6 +136,9 @@
   </url><url>
     <loc>https://taichimaeda.github.io/Home</loc>
     <lastmod>2024-04-01T13:59:03.257Z</lastmod>
+  </url><url>
+    <loc>https://taichimaeda.github.io/Mathematics/To-Be-Sorted/Floating-Point-Summation</loc>
+    <lastmod>2024-06-02T05:30:47.025Z</lastmod>
   </url><url>
     <loc>https://taichimaeda.github.io/Projects/Over-the-Wire/Over-the-Wire---Bandit</loc>
     <lastmod>2023-06-29T03:14:51.000Z</lastmod>
