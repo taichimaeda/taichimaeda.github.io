@@ -9,7 +9,7 @@
     <title>Floating Point Summation</title>
     <link>https://taichimaeda.github.io/Mathematics/To-Be-Sorted/Floating-Point-Summation</link>
     <guid>https://taichimaeda.github.io/Mathematics/To-Be-Sorted/Floating-Point-Summation</guid>
-    <description>Floating Point Summation document (psu.edu) Definition Given an infinite precision operator and machine precision operator : where: is the rounding-off error is the machine epsilon ...</description>
+    <description>Floating Point Summation Definitions Given an infinite precision addition operator and its machine precision counterpart : where: is the rounding-off error is the machine epsilon ...</description>
     <pubDate>Sun, 02 Jun 2024 05:30:47 GMT</pubDate>
   </item><item>
     <title>Rebasing Pushed Branches</title>
