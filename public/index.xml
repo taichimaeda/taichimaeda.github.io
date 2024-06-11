@@ -6,6 +6,18 @@
       <description>Last 10 notes on 🥝 Taichi&#039;s Obsidian</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Raft</title>
+    <link>https://taichimaeda.github.io/Computer-Science/Distributed-Systems/Raft</link>
+    <guid>https://taichimaeda.github.io/Computer-Science/Distributed-Systems/Raft</guid>
+    <description>Raft TODO Paper: In Search of an Understandable Consensus Algorithm (raft.github.io) Visualisation: Raft Consensus Algorithm.</description>
+    <pubDate>Sat, 08 Jun 2024 13:46:13 GMT</pubDate>
+  </item><item>
+    <title>Paxos</title>
+    <link>https://taichimaeda.github.io/Computer-Science/Distributed-Systems/Paxos</link>
+    <guid>https://taichimaeda.github.io/Computer-Science/Distributed-Systems/Paxos</guid>
+    <description>Paxos TODO Original paper: acm.dvi (lamport.azurewebsites.net) The author appears to be an archeologist with only a passing interest in computer science ...</description>
+    <pubDate>Sat, 08 Jun 2024 13:46:07 GMT</pubDate>
+  </item><item>
     <title>Floating Point Summation</title>
     <link>https://taichimaeda.github.io/Mathematics/To-Be-Sorted/Floating-Point-Summation</link>
     <guid>https://taichimaeda.github.io/Mathematics/To-Be-Sorted/Floating-Point-Summation</guid>
@@ -53,18 +65,6 @@
     <guid>https://taichimaeda.github.io/Engineering/Version-Control/Editing-Past-Commits</guid>
     <description>Editing Past Commits Imagine we have a commit graph like this: A---B---C (feature, origin/feature) and we want to edit the commit B. Rebasing a Temporary Branch amending a single file in a past commit in git - Stack Overflow Create a temporary branch e.g.</description>
     <pubDate>Mon, 15 Apr 2024 07:52:43 GMT</pubDate>
-  </item><item>
-    <title>Git Hooks</title>
-    <link>https://taichimaeda.github.io/Engineering/Version-Control/Git-Hooks</link>
-    <guid>https://taichimaeda.github.io/Engineering/Version-Control/Git-Hooks</guid>
-    <description>Git Hooks Git - Git Hooks (git-scm.com) Git hooks are scripts that are executed on specific events e.g. pre-commit, pre-push. By default, hooks are stored under .git/hooks, and Git executes the script with the file name corresponding to the event e.g.</description>
-    <pubDate>Mon, 15 Apr 2024 07:35:34 GMT</pubDate>
-  </item><item>
-    <title>Git Internals</title>
-    <link>https://taichimaeda.github.io/Engineering/Version-Control/Git-Internals</link>
-    <guid>https://taichimaeda.github.io/Engineering/Version-Control/Git-Internals</guid>
-    <description>Git Internals Git - Git Objects (git-scm.com) There are three types of git objects: Blob objects Tree objects Commit objects Unlike csv or subversion which keeps track of changes, ...</description>
-    <pubDate>Mon, 15 Apr 2024 07:32:56 GMT</pubDate>
   </item>
     </channel>
   </rss>
