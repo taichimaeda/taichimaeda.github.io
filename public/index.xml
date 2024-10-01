@@ -6,16 +6,16 @@
       <description>Last 10 notes on 🥝 Taichi&#039;s Obsidian</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Raft</title>
-    <link>https://taichimaeda.github.io/Computer-Science/Distributed-Systems/Raft</link>
-    <guid>https://taichimaeda.github.io/Computer-Science/Distributed-Systems/Raft</guid>
-    <description>Raft TODO Paper: In Search of an Understandable Consensus Algorithm (raft.github.io) Visualisation: Raft Consensus Algorithm.</description>
+    <title>Raft Consensus Algorithm</title>
+    <link>https://taichimaeda.github.io/Computer-Science/Distributed-Systems/Raft-Consensus-Algorithm</link>
+    <guid>https://taichimaeda.github.io/Computer-Science/Distributed-Systems/Raft-Consensus-Algorithm</guid>
+    <description>Raft Consensus Algorithm TODO Original paper: Raft Consensus Algorithm Paper Visualisation: Raft Consensus Algorithm.</description>
     <pubDate>Sat, 08 Jun 2024 13:46:13 GMT</pubDate>
   </item><item>
-    <title>Paxos</title>
-    <link>https://taichimaeda.github.io/Computer-Science/Distributed-Systems/Paxos</link>
-    <guid>https://taichimaeda.github.io/Computer-Science/Distributed-Systems/Paxos</guid>
-    <description>Paxos TODO Original paper: acm.dvi (lamport.azurewebsites.net) The author appears to be an archeologist with only a passing interest in computer science ...</description>
+    <title>Paxos Consensus Algorithm</title>
+    <link>https://taichimaeda.github.io/Computer-Science/Distributed-Systems/Paxos-Consensus-Algorithm</link>
+    <guid>https://taichimaeda.github.io/Computer-Science/Distributed-Systems/Paxos-Consensus-Algorithm</guid>
+    <description>Paxos Consensus Algorithm TODO Original paper: Paxos Consensus Algorithm Paper The author appears to be an archeologist with only a passing interest in computer science ...</description>
     <pubDate>Sat, 08 Jun 2024 13:46:07 GMT</pubDate>
   </item><item>
     <title>Floating Point Summation</title>
@@ -25,44 +25,44 @@
     <pubDate>Sun, 02 Jun 2024 05:30:47 GMT</pubDate>
   </item><item>
     <title>Rebasing Pushed Branches</title>
-    <link>https://taichimaeda.github.io/Engineering/Version-Control/Rebasing-Pushed-Branches</link>
-    <guid>https://taichimaeda.github.io/Engineering/Version-Control/Rebasing-Pushed-Branches</guid>
+    <link>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Rebasing-Pushed-Branches</link>
+    <guid>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Rebasing-Pushed-Branches</guid>
     <description>Rebasing Pushed Branches 「push済のブランチだけどリベースしたい！」というときの対処方法 (zenn.dev) Image we have pushed a feature branch but still want to rebase it, while avoiding the worst-case scenario ...</description>
     <pubDate>Mon, 15 Apr 2024 14:58:27 GMT</pubDate>
   </item><item>
     <title>Golden Rule of Rebasing</title>
-    <link>https://taichimaeda.github.io/Engineering/Version-Control/Golden-Rule-of-Rebasing</link>
-    <guid>https://taichimaeda.github.io/Engineering/Version-Control/Golden-Rule-of-Rebasing</guid>
+    <link>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Golden-Rule-of-Rebasing</link>
+    <guid>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Golden-Rule-of-Rebasing</guid>
     <description>Golden Rule of Rebasing The Golden Rule of Rebasing in Git | Axosoft (gitkraken.com) Quote The Golden Rule of Rebasing reads: “Never rebase while you’re on a public branch.” Or rather, ...</description>
     <pubDate>Mon, 15 Apr 2024 14:49:38 GMT</pubDate>
   </item><item>
     <title>Ours and Theirs</title>
-    <link>https://taichimaeda.github.io/Engineering/Version-Control/Ours-and-Theirs</link>
-    <guid>https://taichimaeda.github.io/Engineering/Version-Control/Ours-and-Theirs</guid>
+    <link>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Ours-and-Theirs</link>
+    <guid>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Ours-and-Theirs</guid>
     <description>Ours and Theirs git - ours vs theirs (nitaym.github.io) Warning This page talks about the ours and theirs in git checkout, used during merge conflicts ...</description>
     <pubDate>Mon, 15 Apr 2024 13:36:07 GMT</pubDate>
   </item><item>
     <title>Git Maintainance</title>
-    <link>https://taichimaeda.github.io/Engineering/Version-Control/Git-Maintainance</link>
-    <guid>https://taichimaeda.github.io/Engineering/Version-Control/Git-Maintainance</guid>
+    <link>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Git-Maintainance</link>
+    <guid>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Git-Maintainance</guid>
     <description>Git Maintenance Git - git-maintenance Documentation (git-scm.com) Run git maintaince inside your most frequently-accessed repositories to run cron jobs to optimise git repository ...</description>
     <pubDate>Mon, 15 Apr 2024 07:58:59 GMT</pubDate>
   </item><item>
     <title>Upstream and Remote-Tracking Branches</title>
-    <link>https://taichimaeda.github.io/Engineering/Version-Control/Upstream-and-Remote-Tracking-Branches</link>
-    <guid>https://taichimaeda.github.io/Engineering/Version-Control/Upstream-and-Remote-Tracking-Branches</guid>
+    <link>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Upstream-and-Remote-Tracking-Branches</link>
+    <guid>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Upstream-and-Remote-Tracking-Branches</guid>
     <description>Upstream and Remote-Tracking Branches Upstream branches are the branches on the remote repository e.g. main Remote tracking branches are the branches on the local repository which mirrors their corresponding upstream branches e.g.</description>
     <pubDate>Mon, 15 Apr 2024 07:56:10 GMT</pubDate>
   </item><item>
     <title>Traversing Parent Commits</title>
-    <link>https://taichimaeda.github.io/Engineering/Version-Control/Traversing-Parent-Commits</link>
-    <guid>https://taichimaeda.github.io/Engineering/Version-Control/Traversing-Parent-Commits</guid>
+    <link>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Traversing-Parent-Commits</link>
+    <guid>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Traversing-Parent-Commits</guid>
     <description>Traversing Commit What’s the difference between HEAD^ and HEAD~ in Git? - Stack Overflow ~2 means up two levels in the hierarchy Via the first parent if a commit has more than one parent ...</description>
     <pubDate>Mon, 15 Apr 2024 07:54:31 GMT</pubDate>
   </item><item>
     <title>Editing Past Commits</title>
-    <link>https://taichimaeda.github.io/Engineering/Version-Control/Editing-Past-Commits</link>
-    <guid>https://taichimaeda.github.io/Engineering/Version-Control/Editing-Past-Commits</guid>
+    <link>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Editing-Past-Commits</link>
+    <guid>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Editing-Past-Commits</guid>
     <description>Editing Past Commits Imagine we have a commit graph like this: A---B---C (feature, origin/feature) and we want to edit the commit B. Rebasing a Temporary Branch amending a single file in a past commit in git - Stack Overflow Create a temporary branch e.g.</description>
     <pubDate>Mon, 15 Apr 2024 07:52:43 GMT</pubDate>
   </item>

@@ -5,10 +5,10 @@
     <loc>https://taichimaeda.github.io/Computer-Science/Algorithms/String-Algorithms/Z-Algorithm</loc>
     <lastmod>2024-03-05T15:21:04.886Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Computer-Science/Distributed-Systems/Paxos</loc>
+    <loc>https://taichimaeda.github.io/Computer-Science/Distributed-Systems/Paxos-Consensus-Algorithm</loc>
     <lastmod>2024-06-08T13:46:07.299Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Computer-Science/Distributed-Systems/Raft</loc>
+    <loc>https://taichimaeda.github.io/Computer-Science/Distributed-Systems/Raft-Consensus-Algorithm</loc>
     <lastmod>2024-06-08T13:46:13.666Z</lastmod>
   </url><url>
     <loc>https://taichimaeda.github.io/Computer-Science/Networks/To-Be-Sorted/Application-Layer</loc>
@@ -53,95 +53,44 @@
     <loc>https://taichimaeda.github.io/Computer-Science/Operating-Systems/To-Be-Sorted/Threads</loc>
     <lastmod>2023-04-02T02:46:45.309Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Computer-Science/Theory-of-Computation/Introduction-to-the-Theory-of-Computation/Chapter-1</loc>
-    <lastmod>2024-03-24T16:32:05.418Z</lastmod>
-  </url><url>
     <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/Rust/Rustonomicon/Chapter-1---Data-Layout</loc>
     <lastmod>2024-04-12T08:08:52.959Z</lastmod>
   </url><url>
     <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/Rust/Rustonomicon/Chapter-2---Ownership-and-Lifetimes</loc>
     <lastmod>2024-04-12T12:31:59.039Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/TypeScript/Any-Type</loc>
-    <lastmod>2024-04-09T07:14:51.157Z</lastmod>
-  </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/TypeScript/Compute</loc>
-    <lastmod>2024-04-08T13:01:45.637Z</lastmod>
-  </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/TypeScript/Conditional-Types</loc>
-    <lastmod>2024-04-08T07:19:13.183Z</lastmod>
-  </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/TypeScript/Empty-Objects</loc>
-    <lastmod>2024-04-09T01:23:35.839Z</lastmod>
-  </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/TypeScript/Index-Signatures</loc>
-    <lastmod>2024-04-09T03:00:05.775Z</lastmod>
-  </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/TypeScript/Indexing</loc>
-    <lastmod>2024-04-07T14:02:52.969Z</lastmod>
-  </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/TypeScript/Inference</loc>
-    <lastmod>2024-04-07T14:02:42.506Z</lastmod>
-  </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/TypeScript/Intersection-and-Union</loc>
-    <lastmod>2024-04-08T00:48:05.132Z</lastmod>
-  </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/TypeScript/Keyof</loc>
-    <lastmod>2024-04-08T01:17:00.591Z</lastmod>
-  </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/TypeScript/Literal-Types</loc>
-    <lastmod>2024-04-08T07:20:08.572Z</lastmod>
-  </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/TypeScript/Local-Variables</loc>
-    <lastmod>2024-04-08T12:09:53.247Z</lastmod>
-  </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/TypeScript/Mapped-Types</loc>
-    <lastmod>2024-04-07T17:04:47.370Z</lastmod>
-  </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/TypeScript/Tail-Recursion</loc>
-    <lastmod>2024-04-10T04:32:25.276Z</lastmod>
-  </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/TypeScript/Type-Equality</loc>
-    <lastmod>2024-04-07T13:08:57.295Z</lastmod>
-  </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/TypeScript/Type-Hierarchy</loc>
-    <lastmod>2024-04-07T12:31:40.246Z</lastmod>
-  </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/TypeScript/Union-to-Tuples</loc>
-    <lastmod>2024-04-08T11:15:36.266Z</lastmod>
-  </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Programming-Languages/TypeScript/Void-Type</loc>
-    <lastmod>2024-04-07T12:30:22.370Z</lastmod>
-  </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Version-Control/Editing-Past-Commits</loc>
+    <loc>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Editing-Past-Commits</loc>
     <lastmod>2024-04-15T07:52:43.168Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Version-Control/Git-Hooks</loc>
+    <loc>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Git-Hooks</loc>
     <lastmod>2024-04-15T07:35:34.153Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Version-Control/Git-Internals</loc>
+    <loc>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Git-Internals</loc>
     <lastmod>2024-04-15T07:32:56.372Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Version-Control/Git-Maintainance</loc>
+    <loc>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Git-Maintainance</loc>
     <lastmod>2024-04-15T07:58:59.022Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Version-Control/Golden-Rule-of-Rebasing</loc>
+    <loc>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Golden-Rule-of-Rebasing</loc>
     <lastmod>2024-04-15T14:49:38.352Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Version-Control/Ours-and-Theirs</loc>
+    <loc>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Ours-and-Theirs</loc>
     <lastmod>2024-04-15T13:36:07.496Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Version-Control/Rebasing-Pushed-Branches</loc>
+    <loc>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Rebasing-Pushed-Branches</loc>
     <lastmod>2024-04-15T14:58:27.880Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Version-Control/Traversing-Parent-Commits</loc>
+    <loc>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Traversing-Parent-Commits</loc>
     <lastmod>2024-04-15T07:54:31.133Z</lastmod>
   </url><url>
-    <loc>https://taichimaeda.github.io/Engineering/Version-Control/Upstream-and-Remote-Tracking-Branches</loc>
+    <loc>https://taichimaeda.github.io/Engineering/Project-Management/Version-Control/Upstream-and-Remote-Tracking-Branches</loc>
     <lastmod>2024-04-15T07:56:10.212Z</lastmod>
   </url><url>
     <loc>https://taichimaeda.github.io/Home</loc>
     <lastmod>2024-04-01T13:59:03.257Z</lastmod>
+  </url><url>
+    <loc>https://taichimaeda.github.io/Mathematics/Theory-of-Computation/Introduction-to-the-Theory-of-Computation/Chapter-1</loc>
+    <lastmod>2024-03-24T16:32:05.418Z</lastmod>
   </url><url>
     <loc>https://taichimaeda.github.io/Mathematics/To-Be-Sorted/Floating-Point-Summation</loc>
     <lastmod>2024-06-02T05:30:47.025Z</lastmod>
