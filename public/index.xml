@@ -39,14 +39,8 @@
     <title>Home</title>
     <link>https://taichimaeda.github.io/Home</link>
     <guid>https://taichimaeda.github.io/Home</guid>
-    <description>Hi there, I’m Taichi Maeda 👋 I’m a third year student at Imperial College London 🎓. I’m currently based in London 🇬🇧 for my studies, but will be working in Tokyo 🇯🇵 as an intern this summer and (hopefully) after graduation too! This is my personal Obsidian vault, where I note down interesting discoveries and learnings.</description>
+    <description>Hi there, I’m Taichi Maeda 👋 I’m a fourth year student at Imperial College London 🎓. I’m currently based in London 🇬🇧 for my studies, but will be working in Tokyo 🇯🇵 as an intern this summer and (hopefully) after graduation too! This is my personal Obsidian vault, where I note down interesting discoveries and learnings.</description>
     <pubDate>Mon, 01 Apr 2024 13:59:03 GMT</pubDate>
-  </item><item>
-    <title>Chapter 1</title>
-    <link>https://taichimaeda.github.io/Mathematics/Theory-of-Computation/Introduction-to-the-Theory-of-Computation/Chapter-1</link>
-    <guid>https://taichimaeda.github.io/Mathematics/Theory-of-Computation/Introduction-to-the-Theory-of-Computation/Chapter-1</guid>
-    <description>Chapter 1 Terminologies String is a sequence of symbols of finite length String is a sequence of zero length Usually not included in a language Used by NFA Alphabet is a set of symbols ...</description>
-    <pubDate>Sun, 24 Mar 2024 16:32:05 GMT</pubDate>
   </item><item>
     <title>KMP Algorithm</title>
     <link>https://taichimaeda.github.io/Computer-Science/Algorithms/String-Algorithms/KMP-Algorithm</link>
@@ -65,6 +59,12 @@
     <guid>https://taichimaeda.github.io/Projects/Over-the-Wire/Over-the-Wire---Natas</guid>
     <description>Over the Wire - Natas overthewire.org/wargames/natas/ Level 0 今回はSSHでログインする必要はないらしい（というかできないらしい）。 以下のようなサイトにアクセスしてそこからパスワードを探すといった感じ。パスワードはアクセスしたときにBasic認証のプロンプトが出てくるのでそこに渡す。 ...</description>
     <pubDate>Thu, 29 Jun 2023 18:06:46 GMT</pubDate>
+  </item><item>
+    <title>Over the Wire - Bandit</title>
+    <link>https://taichimaeda.github.io/Projects/Over-the-Wire/Over-the-Wire---Bandit</link>
+    <guid>https://taichimaeda.github.io/Projects/Over-the-Wire/Over-the-Wire---Bandit</guid>
+    <description>Over the Wire - Bandit overthewire.org/wargames/bandit/ Level 0 ssh bandit0@bandit.labs.overthewire.org -p 2220 ポート2220でSSHサーバーにログイン。 Level 0 to 1 bandit1@bandit:~/inhere$ ...</description>
+    <pubDate>Thu, 29 Jun 2023 03:14:51 GMT</pubDate>
   </item>
     </channel>
   </rss>
