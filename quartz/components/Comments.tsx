@@ -2,7 +2,7 @@ import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 export default (() => {
   return ({ fileData }: QuartzComponentProps) => {
-    const comments = fileData.frontmatter?.comments !== "disable"
+    const comments = fileData.frontmatter?.comments !== "false"
     if (!comments) {
       return null;
     }

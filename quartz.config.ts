@@ -25,7 +25,6 @@ const config: QuartzConfig = {
       "2029",
       "2030",
       ".obsidian",
-      "References",
       "Samples",
       "Templates",
       "**/*.pdf",

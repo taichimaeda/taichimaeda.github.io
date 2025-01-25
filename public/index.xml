@@ -6,6 +6,18 @@
       <description>Last 10 notes on 🥝 Taichi&#039;s Obsidian</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>【Go】カリカリなMutexを作る</title>
+    <link>https://taichimaeda.github.io/Posts/2024/%E3%80%90Go%E3%80%91%E3%82%AB%E3%83%AA%E3%82%AB%E3%83%AA%E3%81%AAMutex%E3%82%92%E4%BD%9C%E3%82%8B</link>
+    <guid>https://taichimaeda.github.io/Posts/2024/%E3%80%90Go%E3%80%91%E3%82%AB%E3%83%AA%E3%82%AB%E3%83%AA%E3%81%AAMutex%E3%82%92%E4%BD%9C%E3%82%8B</guid>
+    <description>【Go】カリカリなMutexを作る はじめに こちらはCA26卒内定者がお届けする、CyberAgent 26th Fresh Engineer’s Advent Calendar 2024の20日目の記事になります。 サボり記事で申し訳ないのですが、せっかく枠が空いていたので、今回は内定者バイト期間中のチーム内勉強会で発表したGoのMutexに関する資料を貼っておきたいと思います。 ...</description>
+    <pubDate>Sat, 25 Jan 2025 15:29:56 GMT</pubDate>
+  </item><item>
+    <title>【Haskell】Point-freeスタイルのすすめ</title>
+    <link>https://taichimaeda.github.io/Posts/2024/%E3%80%90Haskell%E3%80%91Point-free%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%AE%E3%81%99%E3%81%99%E3%82%81</link>
+    <guid>https://taichimaeda.github.io/Posts/2024/%E3%80%90Haskell%E3%80%91Point-free%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%AE%E3%81%99%E3%81%99%E3%82%81</guid>
+    <description>【Haskell】Point-freeスタイルのすすめ はじめに こちらはCA26卒内定者がお届けする、CyberAgent 26th Fresh Engineer’s Advent Calendar 2024の25日目の記事になります。 内定者バイト期間中はGoばかり書いていて、Haskellが読めない、やばい…！！という事態に陥ってしまったため、久々にコードリーディングをしていきたいと思います。 ...</description>
+    <pubDate>Fri, 20 Dec 2024 06:36:14 GMT</pubDate>
+  </item><item>
     <title>Raft Consensus Algorithm</title>
     <link>https://taichimaeda.github.io/Computer-Science/Distributed-Systems/Raft-Consensus-Algorithm</link>
     <guid>https://taichimaeda.github.io/Computer-Science/Distributed-Systems/Raft-Consensus-Algorithm</guid>
@@ -39,7 +51,7 @@
     <title>Home</title>
     <link>https://taichimaeda.github.io/Home</link>
     <guid>https://taichimaeda.github.io/Home</guid>
-    <description>Hi there, I’m Taichi Maeda 👋 I’m a fourth year student at Imperial College London 🎓. I’m currently based in London 🇬🇧 for my studies, but will be working in Tokyo 🇯🇵 as an intern this summer and (hopefully) after graduation too! This is my personal Obsidian vault, where I note down interesting discoveries and learnings.</description>
+    <description>I’m Taichi Maeda, a final-year student at Imperial College London. This is my personal Obsidian vault. The content reflects my interpretations and may occasionally contain errors or inconsistencies.</description>
     <pubDate>Mon, 01 Apr 2024 13:59:03 GMT</pubDate>
   </item><item>
     <title>KMP Algorithm</title>
@@ -53,18 +65,6 @@
     <guid>https://taichimaeda.github.io/Computer-Science/Algorithms/String-Algorithms/Z-Algorithm</guid>
     <description>Z Algorithm 文字列検索アルゴリズム① ー Z algorithm競技プログラミング - Qiita Definition Given a string , the Z algorithm constructs the Z array of in : Z Array The Z array of is defined as follows: Quote is ...</description>
     <pubDate>Tue, 05 Mar 2024 15:21:04 GMT</pubDate>
-  </item><item>
-    <title>Over the Wire - Natas</title>
-    <link>https://taichimaeda.github.io/Projects/Over-the-Wire/Over-the-Wire---Natas</link>
-    <guid>https://taichimaeda.github.io/Projects/Over-the-Wire/Over-the-Wire---Natas</guid>
-    <description>Over the Wire - Natas overthewire.org/wargames/natas/ Level 0 今回はSSHでログインする必要はないらしい（というかできないらしい）。 以下のようなサイトにアクセスしてそこからパスワードを探すといった感じ。パスワードはアクセスしたときにBasic認証のプロンプトが出てくるのでそこに渡す。 ...</description>
-    <pubDate>Thu, 29 Jun 2023 18:06:46 GMT</pubDate>
-  </item><item>
-    <title>Over the Wire - Bandit</title>
-    <link>https://taichimaeda.github.io/Projects/Over-the-Wire/Over-the-Wire---Bandit</link>
-    <guid>https://taichimaeda.github.io/Projects/Over-the-Wire/Over-the-Wire---Bandit</guid>
-    <description>Over the Wire - Bandit overthewire.org/wargames/bandit/ Level 0 ssh bandit0@bandit.labs.overthewire.org -p 2220 ポート2220でSSHサーバーにログイン。 Level 0 to 1 bandit1@bandit:~/inhere$ ...</description>
-    <pubDate>Thu, 29 Jun 2023 03:14:51 GMT</pubDate>
   </item>
     </channel>
   </rss>
