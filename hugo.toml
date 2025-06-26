@@ -1,0 +1,69 @@
+baseURL = 'https://taichimaeda.github.io/'
+title = "Taichi's Blog"
+theme = 'rusty-typewriter'
+languageCode = 'en-gb'
+enableRobotsTXT = true
+
+# MathJax
+[markup]
+[markup.goldmark]
+[markup.goldmark.extensions]
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['$$', '$$']]
+inline = [['$', '$']]
+
+# Rusty Typewriter Theme (rtwt)
+[params.author]
+name = 'Taichi Maeda'
+
+[params.rtwt.side.home]
+taxonomies = ['tags']
+countTaxonomy = 20
+
+[params.rtwt.side.single]
+showDetails = false
+
+[taxonomies]
+tag = 'tags'
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 1
+
+[[menus.main]]
+name = 'Notes'
+pageRef = '/notes'
+weight = 2
+
+[[menus.main]]
+name = 'Slides'
+pageRef = '/slides'
+weight = 2
+
+[[menus.main]]
+name = 'About'
+pageRef = '/about.md'
+weight = 3
+
+# Search Index
+[outputFormats]
+[outputFormats.SearchIndex]
+mediaType = "application/json"
+baseName = "searchindex"
+isPlainText = true
+notAlternative = true
+
+[mediaTypes]
+[mediaTypes."application/json"]
+suffixes = ["json"]
+
+[outputs]
+home = ["HTML", "RSS", "SearchIndex"]
+
+# GitHub Pages
+[caches]
+[caches.images]
+dir = ':cacheDir/images'
