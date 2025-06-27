@@ -10,6 +10,11 @@ I'm Taichi Maeda, a final-year student at Imperial College London.
 
 My current interest lies in compiler design, software verification, and a bit of type theory, proof theory and model theory.
 
+Please contact me on LinkedIn if you would like a copy of my CV.
+
+- [GitHub](https://github.com/taichimaeda)
+- [LinkedIn](https://www.linkedin.com/in/taichi-maeda-b43348197/)
+
 ## Background
 
 - 2021-2025: Imperial College London (MEng Computing)
