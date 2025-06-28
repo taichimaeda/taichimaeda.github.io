@@ -19,6 +19,7 @@
   --body-text-color: #222;
   --body-background-color: #f0efea;
 
+  /* NOTE: Changed primary color */
   --primary-color: #5b94cd;
   --selection-color: #9cbddd;
 
@@ -29,6 +30,7 @@
   --body-text-color: #f0efea;
   --body-background-color: #222;
 
+  /* NOTE: Changed primary color */
   --primary-color: #5b94cd;
   --selection-color: #9cbddd;
 
