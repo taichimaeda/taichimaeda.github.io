@@ -8,7 +8,7 @@ type = 'blank'
 
 I'm Taichi Maeda, a final-year student at Imperial College London.
 
-My current interest lies in compiler design, software verification, and a bit of type theory, proof theory and model theory.
+My current interest lies in compiler design, software verification, and a bit of type theory.
 
 Please contact me on LinkedIn if you would like a copy of my CV.
 
@@ -30,9 +30,9 @@ Please contact me on LinkedIn if you would like a copy of my CV.
 ## Contributions
 
 - [SpecTec](https://github.com/Wasm-DSL/spectec)
-  - DSL and toolchain that facilitates both the Wasm specification and the generation of artifacts necessary to standardize new features.
+  - The official toolchain for producing the WebAssembly specification and key artefacts (e.g. reference interpreter, mechanised definitions).
 - [WasmCert-Rocq](https://github.com/WasmCert/WasmCert-Coq)
-  - A WebAssembly formalisation in Coq (Rocq), based on the official specification.
+  - A WebAssembly formalisation in the Rocq (Coq) theorem prover.
 
 ## Publications
 
@@ -43,4 +43,4 @@ Please contact me on LinkedIn if you would like a copy of my CV.
 ## Awards
 
 - [Olav Beckmann Project Prize](https://www.imperial.ac.uk/computing/prospective-students/prizes/undergraduate-accordions/undergraduate-archive/)
-  - Awarded annually for outstanding second-year undergraduate laboratory project work.
+  - Awarded annually for outstanding undergraduate project work.
