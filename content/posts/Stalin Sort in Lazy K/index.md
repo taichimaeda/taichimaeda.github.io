@@ -1,7 +1,7 @@
 +++
 title = 'Stalin Sort in Lazy K'
 date = '2025-06-26T0:00:00-00:00'
-tags = ['lazyk', 'lambda calculus', 'sorting']
+tags = ['lazy k', 'lambda calculus', 'sorting']
 draft = false
 comment = true
 featured = true
@@ -59,6 +59,8 @@ n&\triangleq\lambda f.\lambda x.f^{\circ n}~x \\
 \end{align}
 $$
 
+A small caveat is that an empty list in Lazy K is represented as an integer $\mathrm{eol}\triangleq256$, so there is no need to store a boolean flag in each node to indicate if the list is empty or not, which is common in other encodings.
+
 Building on these primitives, we can implement the Stalin sort algorithm in Lazy K in a straightforward way. The algorithm can be expressed as a recursive function that takes a list and a bound, and returns a sorted list:
 
 $$
@@ -107,4 +109,6 @@ It's very long and cryptic, but it turns out to be a valid Lazy K program! I've 
 
 ## Conclusion
 
-I hope you enjoyed this post! It's always fascinating to see how theoretical ideas from Lambda Calculus and Church encoding come to life in a practical context. If you have any questions or comments, feel free to reach out!
+It was fascinating to see how theoretical ideas from Lambda Calculus and Church encoding come to life in a practical context. 
+
+I hope you enjoyed this post, and if you have any questions or comments, feel free to reach out!

@@ -6,14 +6,16 @@ type = 'blank'
 
 # About
 
+{{< social-icons >}}
+
 I'm Taichi Maeda, a final-year student at Imperial College London.
 
-My current interest lies in compiler design, software verification, and a bit of type theory.
+My current interests lie in compiler design, software verification, and a bit of meta-mathematics.
 
 Please contact me on LinkedIn if you would like a copy of my CV.
 
-- [GitHub](https://github.com/taichimaeda)
-- [LinkedIn](https://www.linkedin.com/in/taichi-maeda-b43348197/)
+GPG key fingerprint:  
+`1463 6D53 1FDD FA75 9246  B8AD 0BD7 FB5F A3D1 FCB0`
 
 ## Background
 

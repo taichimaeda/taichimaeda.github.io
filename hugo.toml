@@ -45,7 +45,7 @@ weight = 2
 
 [[menus.main]]
 name = 'About'
-pageRef = '/about.md'
+pageRef = 'about/index.md'
 weight = 3
 
 # Search Index
