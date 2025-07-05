@@ -16,6 +16,11 @@ Axiom of Choice, Well-Ordering Theorem, and Zorn's Lemma. I know this topic is a
 >
 > -- Jerry Bona
 
+<!-- From Reddit: -->
+<!-- https://www.reddit.com/r/mathmemes/comments/jc4fzl/the_axiom_of_choice_is_obviously_true_the/ -->
+
+{{< figure src="./meme.jpg" class="w-sm mx-auto" >}}
+
 <!-- From the proof wiki: -->
 <!-- https://proofwiki.org/wiki/ProofWiki:Jokes -->
 
