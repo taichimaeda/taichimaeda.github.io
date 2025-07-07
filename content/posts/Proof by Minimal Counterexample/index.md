@@ -1,5 +1,5 @@
 +++
-date = '2025-07-04T04:46:51+02:00'
+date = '2025-07-05T03:52:51+02:00'
 title = "Proof by Minimal Counterexample"
 tags = []
 draft = true
@@ -28,3 +28,9 @@ It turns out, it is indeed very much related to induction, or more specifically,
   - Optimality of Hoffman coding
 
 <!-- TODO: Lean proof -->
+
+- Proof of fundamental theorem of arithmetic by minimal counterexample
+- Proof that no natural numbers are Dedekind-infinite by minimal counterexample
+  - Start proof by assuming there exists a minimal Dedekind-infinite (von Neumann ordinal) set $s(n)$
+  - Show that $n$ is also Dedekind-infinite, contradicting the minimality of $s(n)$
+  - We can assume the minimal element of the set of Dedekind-infinite ordinals exists by the well-ordering principle, or by using the fact that natural numbers are well-ordered (so that we don't need to use the axiom of choice)
