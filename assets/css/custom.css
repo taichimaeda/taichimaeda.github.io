@@ -1,0 +1,20 @@
+:root[color-scheme^='light'] {
+  --body-text-color: #000 !important;
+  --body-background-color: #fff !important;
+
+  --primary-color: #5b94cd !important;
+  --selection-color: #9cbddd !important;
+}
+
+:root[color-scheme^='dark'] {
+  --primary-color: #5b94cd !important;
+  --selection-color: #9cbddd !important;
+}
+
+.page-section {
+  font-weight: normal;
+}
+
+.centered-container .dim {
+  opacity: 1;
+}
