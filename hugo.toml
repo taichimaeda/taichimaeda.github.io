@@ -41,12 +41,17 @@ weight = 2
 [[menus.main]]
 name = 'Slides'
 pageRef = '/slides'
-weight = 2
+weight = 3
+
+[[menus.main]]
+name = 'Library'
+url = 'https://taichimaeda.vercel.app/'
+weight = 4
 
 [[menus.main]]
 name = 'About'
 pageRef = 'about/index.md'
-weight = 3
+weight = 5
 
 # Search Index
 [outputFormats]

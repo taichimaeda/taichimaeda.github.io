@@ -10,7 +10,7 @@ type = 'blank'
 
 I'm Taichi Maeda, a final-year student at Imperial College London.
 
-My current interests lie in compiler design, software verification, and a bit of meta-mathematics.
+My current interests lie in compiler design, software verification, and a bit of (meta-)mathematics.
 
 Please contact me on LinkedIn if you would like a copy of my CV.
 
