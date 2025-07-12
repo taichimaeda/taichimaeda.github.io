@@ -16,10 +16,11 @@
 }
 
 :root[color-scheme^='light'] {
-  --body-text-color: #222;
-  --body-background-color: #f0efea;
+  /* NOTE: Changed colors */
+  --body-text-color: #000;
+  --body-background-color: #fff;
 
-  /* NOTE: Changed primary color */
+  /* NOTE: Changed colors */
   --primary-color: #5b94cd;
   --selection-color: #9cbddd;
 
@@ -30,7 +31,7 @@
   --body-text-color: #f0efea;
   --body-background-color: #222;
 
-  /* NOTE: Changed primary color */
+  /* NOTE: Changed colors */
   --primary-color: #5b94cd;
   --selection-color: #9cbddd;
 

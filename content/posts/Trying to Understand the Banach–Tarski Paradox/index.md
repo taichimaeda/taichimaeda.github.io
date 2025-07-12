@@ -68,3 +68,7 @@ Proof Lebesgue measure of countablly many points is zero:
 
 Infimum of Xi is zero - proven by showing Xi can be any epsilon>0
 Supremum of Xi is 1 - prove by showing Xi can be any c<1
+
+Banach-Tarski paradox does not work in 1 or 2 dimensions:
+
+> The strong form of the Banach–Tarski paradox is false in dimensions one and two, but Banach and Tarski showed that an analogous statement remains true if countably many subsets are allowed. The difference between dimensions 1 and 2 on the one hand, and 3 and higher on the other hand, is due to the richer structure of the group E(n) of Euclidean motions in 3 dimensions.
