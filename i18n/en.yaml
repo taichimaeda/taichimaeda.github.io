@@ -1,0 +1,10 @@
+# Not found (404)
+not_found_title: Page Not Found
+not_found_desc: Sorry, we couldn't find the page you're looking for.
+not_found_home_link: Go Back to Home
+
+# Footer
+footer: Powered by {{ .ThemeAnchor }} theme for {{ .HugoAnchor }}
+
+# Search
+js_required: This site requires JavaScript to be enabled
