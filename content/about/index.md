@@ -14,9 +14,6 @@ My current interests lie in compiler design, software verification, and a bit of
 
 Please contact me on LinkedIn if you would like a copy of my CV.
 
-GPG key fingerprint:  
-`1463 6D53 1FDD FA75 9246  B8AD 0BD7 FB5F A3D1 FCB0`
-
 ## Background
 
 - 2021-2025: Imperial College London (MEng Computing)

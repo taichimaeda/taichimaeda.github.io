@@ -36,7 +36,7 @@ It seems like the official repository is accepting implementations for various p
 
 ## Implementation
 
-Here is the implementations of the basic primitives in Lambda Calculus, based on the standard Church encoding:
+Here is the implementation of the basic primitives in Lambda Calculus, based on the standard Church encoding:
 
 $$
 \begin{align}
@@ -108,7 +108,5 @@ The final result of the Stalin sort algorithm in Lazy K is as follows:
 It's very long and cryptic, but it turns out to be a valid Lazy K program! I've confirmed its correctness by fuzzing it with random inputs using this [Lazy K interpreter](https://github.com/irori/lazyk/), and it seems to work as expected.
 
 ## Conclusion
-
-It was fascinating to see how theoretical ideas from Lambda Calculus and Church encoding come to life in a practical context. 
 
 I hope you enjoyed this post, and if you have any questions or comments, feel free to reach out!
