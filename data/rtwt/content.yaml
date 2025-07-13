@@ -1,6 +1,0 @@
-home:
-  image: 'logo.svg'
-  greetings: "Hi there, I'm Taichi"
-  text: 'I write random stuff about tech, computer science and mathematics. Please take my words with a grain of salt.'
-side:
-  home:

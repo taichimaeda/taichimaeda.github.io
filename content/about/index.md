@@ -6,7 +6,12 @@ type = 'blank'
 
 # About
 
-{{< social-icons >}}
+<ul class="social-icons">
+  <li><a href="https://github.com/taichimaeda" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+  <li><a href="https://www.linkedin.com/in/taichi-maeda-b43348197/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+  <li><a href="https://orcid.org/0009-0007-3203-8205" target="_blank" rel="noopener" aria-label="ORCID"><i class="fa-brands fa-orcid"></i></a></li>
+  <li><a href="https://scholar.google.com/citations?hl=en&user=BW3iOdoAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fa-brands fa-google"></i></a></li>
+</ul>
 
 I'm Taichi Maeda, a final-year student at Imperial College London.
 
