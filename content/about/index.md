@@ -13,7 +13,7 @@ type = 'blank'
   <li><a href="https://scholar.google.com/citations?hl=en&user=BW3iOdoAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fa-brands fa-google"></i></a></li>
 </ul>
 
-I'm Taichi Maeda, a final-year student at Imperial College London.
+Hi there, I'm Taichi Maeda. 
 
 My current interests lie in compiler design, software verification, and a bit of (meta-)mathematics.
 
@@ -40,9 +40,9 @@ Please contact me on LinkedIn if you would like a copy of my CV.
 
 ## Publications
 
-- Lemmagen: Extending the WebAssembly Specification Toolchain for Theorem Provers (MEng individual project)
-  - [Final report](#) (coming soon)
-  - [Presentation slides](#) (coming soon)
+- Lemmagen: Extending the WebAssembly Specification Toolchain for Theorem Provers (Master's thesis)
+  - [Final report](#) (coming soon?)
+  - [Presentation slides](#) (coming soon?)
 
 ## Awards
 
