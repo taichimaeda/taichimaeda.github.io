@@ -10,4 +10,4 @@ weight = 1
 
 ## Slides
 
-{{< embed-pdf url="./slide.pdf" name="Crispifying Go Mutexes.pdf" >}}
+{{< embed-pdf url="./main.pdf" name="Crispifying Go Mutexes.pdf" >}}
