@@ -1,6 +1,6 @@
 baseURL = 'https://taichimaeda.github.io/'
 title = "Taichi's Blog"
-theme = 'rusty-typewriter'
+theme = ['hugo-admonitions', 'rusty-typewriter']
 languageCode = 'en-gb'
 enableRobotsTXT = true
 
