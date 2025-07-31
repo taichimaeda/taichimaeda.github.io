@@ -46,5 +46,7 @@ Please contact me on LinkedIn if you would like a copy of my CV.
 
 ## Awards
 
+- [Dean's List](https://www.imperial.ac.uk/computing/prospective-students/prizes/undergraduate-accordions/undergraduate-archive/)
+  - Awarded annually to the top 10% of undergraduate students based on overall academic performance.
 - [Olav Beckmann Project Prize](https://www.imperial.ac.uk/computing/prospective-students/prizes/undergraduate-accordions/undergraduate-archive/)
   - Awarded annually for outstanding undergraduate project work.
