@@ -28,9 +28,7 @@ Stalin sort is a ground-breaking sorting algorithm known for its simplicity and 
 
 > Stalin Sort is also know as the best sorting algorithm of all times because of its AMAZING capacity of always ordering an array with an O(n) performance.
 
-The algorithm works by iterating through the list and keeping track of the last seen element, removing any "comrades" that are less than or equal to the last seen element.
-
-Never heard of it before? That's because it is a joke algorithm, and it is not meant to be taken seriously. I found it pretty funny --- hopefully I'm not offending anyone though.
+Never heard of it before? That's because it is a joke algorithm. The algorithm works by iterating through the list and keeping track of the last seen element, removing any elements that are less than or equal to the last seen element. You should know why it's called Stalin Sort now.
 
 It seems like the official repository is accepting implementations for various programming languages, so I thought it would be a fun exercise to revisit Lambda Calculus and Haskell.
 
