@@ -26,6 +26,8 @@ Please contact me on LinkedIn if you would like a copy of my CV.
 
 ## Activities
 
+- [Go Conference 2025, Japan: "Crispifying" Go's Mutex](https://gocon.jp/2025/en/talks/958432/) 
+  - Implementing Go's mutex from scratch and verifying it with SPIN model checker.
 - [PLDI 2025, South Korea: Verification of WebAssembly Features](https://pldi25.sigplan.org/details/rpls-2025-papers/9/Verification-of-WebAssembly-Features)
   - Contributed to research presented by Prof. Philippa Gardner.
 - [Dagstuhl Seminar 2025, Germany: Utilising and Scaling the WebAssembly Semantics](https://www.dagstuhl.de/seminars/seminar-calendar/seminar-details/25241)
@@ -33,6 +35,8 @@ Please contact me on LinkedIn if you would like a copy of my CV.
 
 ## Contributions
 
+- [Golang](https://github.com/golang/go)
+  - The Go programming language
 - [SpecTec](https://github.com/Wasm-DSL/spectec)
   - The official toolchain for producing the WebAssembly specification and key artefacts (e.g. reference interpreter, mechanised definitions).
 - [WasmCert-Rocq](https://github.com/WasmCert/WasmCert-Coq)
