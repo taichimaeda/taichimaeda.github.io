@@ -69,7 +69,6 @@ env, _ := cel.NewEnv(
     cel.Variable("country", cel.StringType),
 )
 ast, _ := env.Compile(`age >= 18 && country == "JP"`)
-
 program, _ := env.Program(ast, cel.UseJIT(), cel.UseJITActivationType[Request]())
 ```
 
@@ -80,7 +79,7 @@ input := &Request{Age: 25, Country: "JP"}
 result, ok := program.JITEval(input)
 ```
 
-If the expression cannot be JIT-compiled (e.g., it uses unsupported features), `JITEnabled()` returns false and `JITError()` explains why. In that case, you can then fall back to the normal `Eval` path.
+If the expression cannot be JIT-compiled, `JITEnabled()` returns false and `JITError()` explains why. In that case, you can then fall back to the normal `Eval` path.
 
 ## Architecture
 
