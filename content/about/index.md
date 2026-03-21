@@ -9,18 +9,19 @@ type = 'blank'
 <ul class="social-icons">
   <li><a href="https://github.com/taichimaeda" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
   <li><a href="https://www.linkedin.com/in/taichi-maeda-b43348197/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
-  <li><a href="https://orcid.org/0009-0007-3203-8205" target="_blank" rel="noopener" aria-label="ORCID"><i class="fa-brands fa-orcid"></i></a></li>
-  <li><a href="https://scholar.google.com/citations?hl=en&user=BW3iOdoAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fa-brands fa-google"></i></a></li>
 </ul>
 
-Hi there, I'm Taichi Maeda. 
+Hi there, my name is Taichi Maeda. 
 
-My current interests lie in compiler design, software verification, and a bit of (meta-)mathematics.
+I am a software engineer at CyberAgent, currently working on [ABEMA](https://abema.tv/).
+
+I am broadly interested in computer science and enjoy learning new things across different areas. I am also a big fan of Go.
 
 Please contact me on LinkedIn if you would like a copy of my CV.
 
 ## Background
 
+- 2025-: CyberAgent, Inc.
 - 2021-2025: Imperial College London (MEng Computing)
 - 2017-2021: Institute Le Rosey (IB Diploma)
 
