@@ -10,7 +10,7 @@ weight = 1
 
 ## Introduction
 
-This is a post about a JIT compiler I've been building for [CEL (Common Expression Language)](https://cel.dev/) in Go. The idea is simple: for filter expressions that run millions of times per second, we can skip the interpreter and emit native machine code instead.
+This is a post about a JIT compiler I've been building for [CEL (Common Expression Language)](https://cel.dev/) in Go.
 
 ## Why use CEL?
 
