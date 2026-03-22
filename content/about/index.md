@@ -47,7 +47,6 @@ Please contact me on LinkedIn if you would like a copy of my CV.
 
 - Lemmagen: Extending the WebAssembly Specification Toolchain for Theorem Provers (Master's thesis)
   - [Final report](./report.pdf)
-  - [Presentation slides](./presentation.pdf)
 
 ## Awards
 
