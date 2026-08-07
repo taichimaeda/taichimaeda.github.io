@@ -17,6 +17,10 @@ I am a software engineer at Canonical, the company behind Ubuntu.
 
 Please contact me on LinkedIn if you would like a copy of my CV.
 
+GPG Fingerprint:
+
+`1463 6D53 1FDD FA75 9246  B8AD 0BD7 FB5F A3D1 FCB0`
+
 ## Background
 
 - 2026-: Canonical
@@ -48,8 +52,8 @@ Please contact me on LinkedIn if you would like a copy of my CV.
 
 ## Publications
 
-- Lemmagen: Extending the WebAssembly Specification Toolchain for Theorem Provers (Master's thesis)
-  - [Final report](./report.pdf)
+- [Lemmagen](./report.pdf)
+  - Extending the WebAssembly Specification Toolchain for Theorem Provers (Master's thesis).
 
 ## Awards
 
