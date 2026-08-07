@@ -26,6 +26,10 @@ Please contact me on LinkedIn if you would like a copy of my CV.
 
 ## Activities
 
+- [Go Conference 2026, Germany: Go 1.26 Prints Floats Faster: How I Brought Dragonbox to Go](https://www.gophercon.eu/#/schedule?day=1&lang=en&sessionId=17594000002267627)
+  - Porting a novel ftoa algorithm Dragonbox into Go's standard library.
+- [Go Conference 2026, Germnay: JIT compilation in Go: How I Made cel-go Run 10x Faster](https://www.gophercon.eu/#/schedule?day=2&lang=en&sessionId=17594000002684064)
+  - Implementing a prototype JIT compiler for the CEL language in Go.
 - [Go Conference 2025, Japan: "Crispifying" Go's Mutex](https://gocon.jp/2025/en/talks/958432/) 
   - Implementing Go's mutex from scratch and verifying it with SPIN model checker.
 - [PLDI 2025, South Korea: Verification of WebAssembly Features](https://pldi25.sigplan.org/details/rpls-2025-papers/9/Verification-of-WebAssembly-Features)
