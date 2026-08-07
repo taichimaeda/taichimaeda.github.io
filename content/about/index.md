@@ -13,15 +13,14 @@ type = 'blank'
 
 Hi there, my name is Taichi Maeda. 
 
-I am a software engineer at CyberAgent, currently working on [ABEMA](https://abema.tv/).
-
-I am broadly interested in computer science and enjoy learning new things across different areas. I am also a big fan of Go.
+I am a software engineer at Canonical, the company behind Ubuntu.
 
 Please contact me on LinkedIn if you would like a copy of my CV.
 
 ## Background
 
-- 2025-: CyberAgent, Inc.
+- 2026-: Canonical
+- 2025-2026: CyberAgent (ABEMA).
 - 2021-2025: Imperial College London (MEng Computing)
 - 2017-2021: Institute Le Rosey (IB Diploma)
 
